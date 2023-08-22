@@ -39,6 +39,9 @@ function App() {
       <Route path="/cats" element={<Cats/>}/>
       <Route path="*" element={<NotFound/>}/>
     </Routes>
+    <footer className="flex relative items-center md:h-32 h-16 px-2 bg-gray-800 text-white">
+      <p>Coffee Cat</p>
+    </footer>
     </>
   );
 }
