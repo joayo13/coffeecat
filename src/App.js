@@ -12,7 +12,7 @@ import catHead from './cathead.png'
 function App() {
   return (
     <>
-    <nav className="flex relative items-center justify-between md:h-32 h-16 px-2 bg-neutral-800 text-neutral-50">
+    <nav className="flex relative items-center justify-between md:h-32 h-16 px-2 bg-neutral-800 text-neutral-300">
         <h1 className="text-[2rem] md:text-[4rem]">CC</h1>
         <img alt='cat head' className="absolute left-1/2 -translate-x-1/2 w-8 h-8 md:w-16 md:h-16" src={catHead}></img>
       <div className="flex gap-2">
@@ -39,7 +39,7 @@ function App() {
       <Route path="/cats" element={<Cats/>}/>
       <Route path="*" element={<NotFound/>}/>
     </Routes>
-    <footer className="flex relative items-center md:h-32 h-16 px-2 bg-neutral-800 text-white">
+    <footer className="flex relative items-center md:h-32 h-16 px-2 bg-neutral-800 text-neutral-300">
       <p>Coffee Cat</p>
     </footer>
     </>
