@@ -15,7 +15,7 @@ function Home() {
       </section>
       <h2 className='text-4xl md:text-7xl text-center py-4'>Customer Reviews</h2>
       <ul className='px-2 w-full flex flex-col md:flex-row gap-2 text-xl md:text-center md:text-3xl md:justify-evenly'>
-        <li className='flex flex-col flex-1 md:items-center gap-2 py-4 px-4 border border-neutral-700 rounded-lg'>
+        <li className='flex flex-col flex-1 md:items-center gap-2 py-4 px-4 bg-gradient-to-r from-indigo-700 to-neutral-800 border border-neutral-700 rounded-lg'>
           <h3 className='underline'>John from Iowa City</h3>
           <div className='flex md:flex-col gap-2 md:gap-0 items-center'>
             <img 
@@ -23,20 +23,20 @@ function Home() {
               alt='john the cat from iowa'
               className='rounded-full h-12 w-12 md:h-24 md:w-24 object-cover border-2 border-neutral-900'>
             </img>
-            <p>Yeah probably the best coffee I've ever tasted hands down.</p>
+            <p>"Yeah probably the best coffee I've ever tasted hands down."</p>
           </div>
         </li>
-        <li className='flex flex-col flex-1 md:items-center gap-2 py-4 px-4 border border-neutral-700 rounded-lg'>
+        <li className='flex flex-col flex-1 md:items-center gap-2 py-4 px-4 bg-gradient-to-r from-green-900 to-neutral-800 border border-neutral-700 rounded-lg'>
           <h3 className='underline'>Billy from Toronto</h3>
           <div className='flex md:flex-col gap-2 md:gap-0 items-center'>
             <img 
               src='https://www.onegreenplanet.org/wp-content/uploads/2014/07/m1lead.jpg'
               alt='billy the cat from toronto'
               className='rounded-full h-12 w-12 md:h-24 md:w-24 object-cover border-2 border-neutral-900'></img>
-            <p>I liked the tea.</p>
+            <p>"I liked the tea."</p>
           </div>
         </li>
-        <li className='flex flex-col flex-1 md:items-center gap-2 py-4 px-4 border border-neutral-700 rounded-lg'>
+        <li className='flex flex-col flex-1 md:items-center gap-2 py-4 px-4 bg-gradient-to-r from-purple-700 to-neutral-800 border border-neutral-700 rounded-lg'>
           <h3 className='underline'>Bart from Detroit</h3>
           <div className='flex md:flex-col gap-2 md:gap-0 items-center'>
             <img 
@@ -44,16 +44,22 @@ function Home() {
               alt='bart the cat from detroit'
               className='object-cover rounded-full h-12 w-12 md:h-24 md:w-24 border-2 border-neutral-900'>
             </img>
-            <p>$%^&# *&^Y$# &*$!!!!!!</p>
+            <p>"$%^&# *&^Y$# &*$!!!!!!"</p>
           </div>
         </li>
       </ul>
-      <section>
-        <h2 className='text-4xl md:text-7xl text-center py-4'>So what are you waiting for? Lets get to shopping.</h2>
-        <ul className='flex w-full items-center md:flex-row md:justify-evenly py-8 flex-col'>
-          <li><Link className='text-4xl md:text-7xl' to='/coffees'>Shop Coffees</Link></li>
-          <li><Link className='text-4xl md:text-7xl' to='/teas'>Shop Teas</Link></li>
+      <section className='relative bg-purple-700'>
+      <div class="custom-shape-divider-top-1692912622">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
+        <h2 className='text-4xl md:text-7xl text-center py-4 relative z-10'>So what are you waiting for? Lets get to shopping.</h2>
+        <ul className='flex w-full gap-2 items-center md:flex-row md:justify-evenly py-8 px-2 flex-col text-3xl relative z-10'>
+          <Link className='coffee-shop-background flex items-end justify-center md:h-80 h-52 w-full rounded-md overflow-hidden' to='/coffees'><p className='w-full py-2 bg-black bg-opacity-80 text-center'>Coffee Shop</p></Link>
+          <Link className='tea-shop-background flex items-end justify-center md:h-80 h-52 w-full rounded-md overflow-hidden' to='/teas'><p className='w-full py-2 bg-black bg-opacity-80 text-center'>Tea Shop</p></Link>
         </ul>
+        
       </section>
     </div>
   )

@@ -5,3 +5,31 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+.coffee-shop-background {
+    background-image: url('https://img.freepik.com/premium-photo/cup-hot-coffee-latte-table-cafe-with-shallow-depth-field_258743-129.jpg');
+    background-size: cover;
+    
+}
+.tea-shop-background {
+    background-image: url('https://wallpaperaccess.com/full/1558843.jpg');
+    background-size: cover;
+}
+.custom-shape-divider-top-1692912622 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1692912622 svg {
+    position: relative;
+    display: block;
+    width: calc(149% + 1.3px);
+    height: 260px;
+}
+
+.custom-shape-divider-top-1692912622 .shape-fill {
+    fill: #171717;
+}
