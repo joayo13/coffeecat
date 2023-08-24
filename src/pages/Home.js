@@ -5,7 +5,7 @@ function Home() {
   return (
     <div>
       <img src={catsInSpace} className='w-full' alt='cats in space'></img>
-      <section className='bg-teal-500 text-white px-2 text-xl md:text-center md:text-3xl'>
+      <section className='bg-neutral-900 text-neutral-50 px-2 text-xl md:text-center md:text-3xl'>
         <h1 className='text-6xl md:text-9xl text-center py-4'>Coffee Cat</h1>
         <p>Here at Coffee Cat our mission is simple:
         <br></br><strong className='text-red-500'>Take over all of humanity and replace humans with AI-enhanced cat cyborgs.</strong></p>
@@ -13,7 +13,7 @@ function Home() {
         <br></br>
         <p>Don't believe us? Well then take a look at some of our non-paid-off customer reviews and you might just think twice.</p>
       </section>
-      <ul className='bg-teal-500 text-white px-2 text-xl md:text-center md:text-3xl'>
+      <ul className='bg-neutral-900 text-neutral-50 px-2 text-xl md:text-center md:text-3xl'>
         <h2 className='text-4xl md:text-7xl text-center py-4'>Customer Reviews</h2>
         <li className='flex flex-col md:items-center gap-2 py-4'>
           <h3 className='underline'>John from Iowa City</h3>
@@ -47,7 +47,7 @@ function Home() {
           </div>
         </li>
       </ul>
-      <section className='bg-purple-500 text-white'>
+      <section className='bg-neutral-900 text-white'>
         <h2 className='text-4xl md:text-7xl text-center py-4'>So what are you waiting for? Lets get to shopping.</h2>
         <ul className='flex w-full items-center md:flex-row md:justify-evenly py-8 flex-col'>
           <li><Link className='text-4xl md:text-7xl' to='/coffees'>Shop Coffees</Link></li>
