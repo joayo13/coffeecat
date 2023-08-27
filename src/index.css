@@ -8,11 +8,14 @@ body {
 .coffee-shop-background {
     background-image: url('https://img.freepik.com/premium-photo/cup-hot-coffee-latte-table-cafe-with-shallow-depth-field_258743-129.jpg');
     background-size: cover;
-    
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 1);
+    font-family: 'Pacifico', cursive;
 }
 .tea-shop-background {
     background-image: url('https://wallpaperaccess.com/full/1558843.jpg');
     background-size: cover;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 1);
+    font-family: 'Pacifico', cursive;
 }
 .custom-shape-divider-top-1692912622 {
     position: absolute;
@@ -32,4 +35,20 @@ body {
 
 .custom-shape-divider-top-1692912622 .shape-fill {
     fill: #171717;
+}
+.customer-reviews {
+    font-family: 'Pacifico', cursive;
+}
+.parallax {
+    /* The image used */
+  background-image: url("./catsinspace.jpg");
+
+  /* Set a specific height */
+  min-height: 80vh; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
