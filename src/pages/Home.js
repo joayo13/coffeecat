@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import catsInSpace from '../catsinspace.jpg'
 function Home() {
   return (
     <div className='bg-neutral-900 text-neutral-300'>
