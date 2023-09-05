@@ -10,21 +10,21 @@ function Coffees() {
       <h3 className='underline'>All Products</h3>
       <ul className='flex flex-col md:flex-row md:max-w-screen-lg justify-center gap-2 flex-wrap'>
         <Link to='0'>
-        <li className='w-72 h-96 flex flex-col justify-evenly p-4 bg-red-500'>
-          <img className='h-3/4 w-full' alt='poop'></img>
-          <p>{coffeeItems[0].title}</p>
+        <li className='w-72 h-96 flex flex-col justify-evenly p-4'>
+          <img className='h-3/4 w-full object-cover' alt={coffeeItems[0].title} src={coffeeItems[0].image}></img>
+          <strong>{coffeeItems[0].title}</strong>
         </li>
         </Link>
         <Link to='1'>
-        <li className='w-72 h-96 flex flex-col justify-evenly p-4 bg-red-500'>
-          <img className='h-3/4 w-full' alt='poop'></img>
-          <p>{coffeeItems[1].title}</p>
+        <li className='w-72 h-96 flex flex-col justify-evenly p-4'>
+          <img className='h-3/4 w-full' alt={coffeeItems[1].title} src={coffeeItems[1].image}></img>
+          <strong>{coffeeItems[1].title}</strong>
         </li>
         </Link>
         <Link to='2'>
-        <li className='w-72 h-96 flex flex-col justify-evenly p-4 bg-red-500'>
-          <img className='h-3/4 w-full' alt='poop'></img>
-          <p>{coffeeItems[2].title}</p>
+        <li className='w-72 h-96 flex flex-col justify-evenly p-4'>
+          <img className='h-3/4 w-full' alt={coffeeItems[2].title} src={coffeeItems[2].image}></img>
+          <strong>{coffeeItems[2].title}</strong>
         </li>
         </Link>
         <Link to='3'>
