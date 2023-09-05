@@ -6,7 +6,7 @@ function Home() {
       <div className='w-full parallax' alt='cats in space'></div>
       <section className='px-2 text-xl md:text-3xl relative'>
         <h1 className='text-6xl md:text-9xl text-center py-4'><strong>Coffee Cat</strong></h1>
-        <div>
+        <div className=' max-w-xl mx-auto'>
         <p>Here at Coffee Cat our mission is simple:
         <strong> Take over all of humanity and replace humans with AI-enhanced cat cyborgs.</strong></p>
         <p>In all seriousness, our team of experts have searched the globe for the best coffees and teas and put them all right here for your convenience. 
