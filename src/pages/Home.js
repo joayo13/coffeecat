@@ -4,12 +4,14 @@ function Home() {
   return (
     <div className='bg-neutral-900 text-neutral-300'>
       <div className='w-full parallax' alt='cats in space'></div>
-      <section className='px-2 text-xl md:text-3xl'>
+      <section className='px-2 text-xl md:text-3xl relative'>
         <h1 className='text-6xl md:text-9xl text-center py-4'><strong>Coffee Cat</strong></h1>
+        <div>
         <p>Here at Coffee Cat our mission is simple:
-        <br></br><strong>Take over all of humanity and replace humans with AI-enhanced cat cyborgs.</strong></p>
-        <p>In all seriousness, our team of experts have searched the globe for the best coffees and teas and put them all right here for your convenience.</p>
-        <p>Don't believe us? Well take a look at some of our non-paid-off customer reviews and you might just think twice.</p>
+        <strong> Take over all of humanity and replace humans with AI-enhanced cat cyborgs.</strong></p>
+        <p>In all seriousness, our team of experts have searched the globe for the best coffees and teas and put them all right here for your convenience. 
+          Don't believe us? Well take a look at some of our non-paid-off customer reviews and you might just think twice.</p>
+        </div>
       </section>
       <h2 className='text-4xl md:text-7xl text-center py-4 customer-reviews'>Customer Reviews</h2>
       <ul className='px-2 w-full flex flex-col md:flex-row gap-2 text-xl md:text-center md:text-3xl md:justify-evenly'>
