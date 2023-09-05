@@ -1,4 +1,5 @@
 import React from 'react'
+import teaItems from '../products/teaItems'
 
 function Teas() {
   return (
@@ -9,39 +10,39 @@ function Teas() {
       <ul className='flex flex-col md:flex-row md:max-w-screen-lg justify-center gap-2 flex-wrap'>
         <li className='w-72 h-96 flex flex-col justify-evenly p-4 bg-red-500'>
           <img className='h-3/4 w-full' alt='poop'></img>
-          <p>Poop Tea</p>
+          <p>{teaItems[0].title}</p>
         </li>
         <li className='w-72 h-96 flex flex-col justify-evenly p-4 bg-red-500'>
           <img className='h-3/4 w-full' alt='poop'></img>
-          <p>Poop Tea</p>
+          <p>{teaItems[1].title}</p>
         </li>
         <li className='w-72 h-96 flex flex-col justify-evenly p-4 bg-red-500'>
           <img className='h-3/4 w-full' alt='poop'></img>
-          <p>Poop Tea</p>
+          <p>{teaItems[2].title}</p>
         </li>
         <li className='w-72 h-96 flex flex-col justify-evenly p-4 bg-red-500'>
           <img className='h-3/4 w-full' alt='poop'></img>
-          <p>Poop Tea</p>
+          <p>{teaItems[3].title}</p>
         </li>
         <li className='w-72 h-96 flex flex-col justify-evenly p-4 bg-red-500'>
           <img className='h-3/4 w-full' alt='poop'></img>
-          <p>Poop Tea</p>
+          <p>{teaItems[4].title}</p>
         </li>
         <li className='w-72 h-96 flex flex-col justify-evenly p-4 bg-red-500'>
           <img className='h-3/4 w-full' alt='poop'></img>
-          <p>Poop Tea</p>
+          <p>{teaItems[5].title}</p>
         </li>
         <li className='w-72 h-96 flex flex-col justify-evenly p-4 bg-red-500'>
           <img className='h-3/4 w-full' alt='poop'></img>
-          <p>Poop Tea</p>
+          <p>{teaItems[6].title}</p>
         </li>
         <li className='w-72 h-96 flex flex-col justify-evenly p-4 bg-red-500'>
           <img className='h-3/4 w-full' alt='poop'></img>
-          <p>Poop Tea</p>
+          <p>{teaItems[7].title}</p>
         </li>
         <li className='w-72 h-96 flex flex-col justify-evenly p-4 bg-red-500'>
           <img className='h-3/4 w-full' alt='poop'></img>
-          <p>Poop Tea</p>
+          <p>{teaItems[8].title}</p>
         </li>
       </ul>
       <p>Page 1 of 1</p>
