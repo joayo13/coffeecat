@@ -58,9 +58,27 @@ function Home() {
     </svg>
 </div>
         <h2 className='text-4xl md:text-7xl text-center py-4 relative z-10'><strong>So what are you waiting for? Lets get to shopping.</strong></h2>
-        <ul className='flex w-full gap-2 items-center md:flex-row md:justify-evenly py-8 px-2 flex-col text-6xl relative z-10'>
-          <Link className='coffee-shop-background flex items-center justify-center md:h-80 h-52 w-full rounded-md overflow-hidden' to='/coffees'><p>Coffee Shop</p></Link>
-          <Link className='tea-shop-background flex items-center justify-center md:h-80 h-52 w-full rounded-md overflow-hidden' to='/teas'><p>Tea Shop</p></Link>
+        <ul className='flex w-full gap-2 items-center md:flex-row md:justify-evenly py-8 px-2 flex-col relative z-10'>
+          <div className='w-full'>
+            <div className='coffee-shop-background flex items-center justify-center h-36 md:h-64 w-full rounded-t-md overflow-hidden'></div>
+            <div className='bg-neutral-900 rounded-b-md text-base p-2'>
+              <strong>Coffee Shop</strong>
+              <span className='flex justify-between items-end'>
+                <p>The coffee shop has many options bnlash blah albla la laksdlka laksdlk alsksadlk lkasdlkaslkdlk alksdlkalsdkl kalksdlkasldk </p>
+                <Link to='/coffees' className='bg-neutral-300 text-neutral-800 font-extrabold py-2 px-4 rounded-md'>Shop</Link>
+              </span>
+            </div>
+          </div>
+          <div className='w-full'>
+            <div className='tea-shop-background flex items-center justify-center h-36 md:h-64 w-full rounded-t-md overflow-hidden'></div>
+            <div className='bg-neutral-900 rounded-b-md text-base p-2'>
+              <strong>Tea Shop</strong>
+              <span className='flex justify-between items-end'>
+                <p>The tea shop has many options bnlash blah albla la laksdlka laksdlk alsksadlk lkasdlkaslkdlk alksdlkalsdkl kalksdlkasldk </p>
+                <Link to='/teas' className='bg-neutral-300 text-neutral-800 font-extrabold py-2 px-4 rounded-md'>Shop</Link>
+              </span>
+              </div>
+          </div>
         </ul>
         
       </section>
