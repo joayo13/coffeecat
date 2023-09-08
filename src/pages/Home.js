@@ -18,37 +18,37 @@ function Home() {
       <ul className='px-2 w-full flex flex-col md:flex-row gap-2 text-xl md:text-center md:text-3xl md:justify-evenly'>
         <li className='flex flex-col flex-1 md:items-center gap-2 py-4 px-4 bg-gradient-to-r from-yellow-900 to-neutral-800 rounded-lg'>
           <h3>John</h3>
-          <h4 className='text-sm text-opacity-50'>Iowa City, Iowa</h4>
+          <h4 className='text-sm'>Iowa City, Iowa</h4>
           <div className='flex md:flex-col gap-2 md:gap-0 items-center'>
             <img 
-              src='https://media.istockphoto.com/id/473619896/photo/cat-fun-picture.webp?b=1&s=170667a&w=0&k=20&c=WToYLrl_oldhPR-i58A3Nk8Fpne4gYDK9VhvZtmurWM='
+              src='https://media.istockphoto.com/id/926092800/photo/portrait-of-a-scottish-straight-cat-with-glasses.jpg?s=612x612&w=0&k=20&c=MvWk4Noy1P27CwNh2UVHoFQ-yuKsFn92PZN8vOz8GCE='
               alt='john the cat from iowa'
               className='rounded-full h-12 w-12 md:h-24 md:w-24 object-cover'>
             </img>
-            <p>"Yeah probably the best coffee I've ever tasted hands down."</p>
+            <strong>"Yeah probably the best coffee I've ever tasted hands down."</strong>
           </div>
         </li>
         <li className='flex flex-col flex-1 md:items-center gap-2 py-4 px-4 bg-gradient-to-r from-yellow-900 to-neutral-800 rounded-lg'>
           <h3>Billy</h3>
-          <h4 className='text-sm text-opacity-50'>Detroit, Michigan</h4>
+          <h4 className='text-sm'>Detroit, Michigan</h4>
           <div className='flex md:flex-col gap-2 md:gap-0 items-center'>
             <img 
               src='https://www.onegreenplanet.org/wp-content/uploads/2014/07/m1lead.jpg'
               alt='billy the cat from toronto'
               className='rounded-full h-12 w-12 md:h-24 md:w-24 object-cover'></img>
-            <p>"I liked the tea."</p>
+            <strong>"I liked the tea."</strong>
           </div>
         </li>
         <li className='flex flex-col flex-1 md:items-center gap-2 py-4 px-4 bg-gradient-to-r from-yellow-900 to-neutral-800 rounded-lg'>
           <h3>Bart</h3>
-          <h4 className='text-sm text-opacity-50'>Toronto, Ontario</h4>
+          <h4 className='text-sm opacity-50'>Toronto, Ontario</h4>
           <div className='flex md:flex-col gap-2 md:gap-0 items-center'>
             <img 
               src='https://www.catster.com/wp-content/uploads/2018/06/Cat-screaming-mouth-open-making-noise.jpg.optimal.jpg'
               alt='bart the cat from detroit'
               className='object-cover rounded-full h-12 w-12 md:h-24 md:w-24'>
             </img>
-            <p>"$%^&# *&^Y$# &*$!!!!!!"</p>
+            <strong>"$%^&# *&^Y$# &*$!!!!!!"</strong>
           </div>
         </li>
       </ul>
@@ -70,7 +70,7 @@ function Home() {
               </span>
             </div>
           </div>
-          <div className='w-full'>
+          <div className='w-full rounded-md'>
             <div className='tea-shop-background h-36 md:h-64 w-full rounded-t-md overflow-hidden'></div>
             <div className='bg-neutral-900 rounded-b-md text-base p-2'>
               <strong className='text-lg'>The Tea Kattle</strong>

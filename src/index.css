@@ -58,6 +58,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.modal-shadow {
+    box-shadow: 0px 8px 16px rgb(23, 23, 23);
+}
 @keyframes slideLeft {
     from {
         transform: translateX(100%);
