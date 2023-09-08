@@ -6,7 +6,7 @@ function Coffees() {
   return (
     <div className='bg-neutral-900 text-neutral-300'>
       <section className='text-center flex flex-col items-center'>
-      <h2 className='text-3xl'>Coffee Shop</h2>
+      <strong className='text-6xl py-2'>Cat Café</strong>
       <h3 className='underline'>All Products</h3>
       <ul className='flex flex-col md:flex-row md:max-w-screen-lg justify-center gap-2 flex-wrap'>
         <Link to='0'>

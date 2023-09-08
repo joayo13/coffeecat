@@ -60,22 +60,32 @@ function Home() {
         <h2 className='text-4xl md:text-7xl text-center py-4 relative z-10'><strong>So what are you waiting for? Lets get to shopping.</strong></h2>
         <ul className='flex w-full gap-2 items-center md:flex-row md:justify-evenly py-8 px-2 flex-col relative z-10'>
           <div className='w-full'>
-            <div className='coffee-shop-background flex items-center justify-center h-36 md:h-64 w-full rounded-t-md overflow-hidden'></div>
+            <div className='coffee-shop-background h-36 md:h-64 w-full rounded-t-md overflow-hidden'></div>
             <div className='bg-neutral-900 rounded-b-md text-base p-2'>
-              <strong>Coffee Shop</strong>
+              <strong className='text-lg'>Cat Café</strong>
               <span className='flex justify-between items-end'>
-                <p>The coffee shop has many options bnlash blah albla la laksdlka laksdlk alsksadlk lkasdlkaslkdlk alksdlkalsdkl kalksdlkasldk </p>
+                <p>Indulge in the world of limited "Meowsterpiece" coffee blends, lovingly crafted to celebrate the art of coffee.</p>
                 <Link to='/coffees' className='bg-neutral-300 text-neutral-800 font-extrabold py-2 px-4 rounded-md'>Shop</Link>
               </span>
             </div>
           </div>
           <div className='w-full'>
-            <div className='tea-shop-background flex items-center justify-center h-36 md:h-64 w-full rounded-t-md overflow-hidden'></div>
+            <div className='tea-shop-background h-36 md:h-64 w-full rounded-t-md overflow-hidden'></div>
             <div className='bg-neutral-900 rounded-b-md text-base p-2'>
-              <strong>Tea Shop</strong>
+              <strong className='text-lg'>The Tea Kattle</strong>
               <span className='flex justify-between items-end'>
-                <p>The tea shop has many options bnlash blah albla la laksdlka laksdlk alsksadlk lkasdlkaslkdlk alksdlkalsdkl kalksdlkasldk </p>
+                <p>Explore our extensive online selection of exquisite teas, each thoughtfully curated to satisfy every palate.</p>
                 <Link to='/teas' className='bg-neutral-300 text-neutral-800 font-extrabold py-2 px-4 rounded-md'>Shop</Link>
+              </span>
+              </div>
+          </div>
+          <div className='w-full'>
+            <div className='cat-hub-background h-36 md:h-64 w-full rounded-t-md overflow-hidden'></div>
+            <div className='bg-neutral-900 rounded-b-md text-base p-2'>
+              <strong className='text-lg'>The Cathub</strong>
+              <span className='flex justify-between items-end'>
+                <p>Come join us in applauding the extraordinary cats who make our lives better and brighter, one purr at a time. </p>
+                <Link to='/cats' className='bg-neutral-300 text-neutral-800 font-extrabold py-2 px-4 rounded-md'>Visit</Link>
               </span>
               </div>
           </div>

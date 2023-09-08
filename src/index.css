@@ -17,6 +17,12 @@ body {
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 1);
     font-family: 'Pacifico', cursive;
 }
+.cat-hub-background {
+    background-image: url('https://i0.wp.com/thediscerningcat.com/wp-content/uploads/2021/03/numerous-cats-asleep-in-a-basket.jpg?fit=1200%2C800&amp;ssl=1');
+    background-size: cover;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 1);
+    font-family: 'Pacifico', cursive;
+}
 .custom-shape-divider-top-1692912622 {
     position: absolute;
     top: 0;
