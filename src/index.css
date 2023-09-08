@@ -50,7 +50,7 @@ body {
   background-image: url("./catsinspace.jpg");
 
   /* Set a specific height */
-  min-height: 80vh; 
+  min-height: 50vh; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;

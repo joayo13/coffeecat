@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 function Home() {
+
   return (
     <div className='bg-neutral-900 text-neutral-300'>
       <div className='w-full parallax' alt='cats in space'></div>
-      <section className='px-2 text-xl md:text-3xl relative'>
-        <h1 className='text-6xl md:text-9xl text-center py-4'><strong>Coffee Cat</strong></h1>
+      <section className='px-2 text-xl md:text-lg relative'>
+        <h1 className='text-4xl md:text-7xl text-center py-4'><strong>Coffee Cat</strong></h1>
         <div className=' max-w-xl mx-auto'>
         <p>Here at Coffee Cat our mission is simple:
         <strong> Take over all of humanity and replace humans with AI-enhanced cat cyborgs.</strong></p>
