@@ -28,39 +28,39 @@ function Coffees() {
         </li>
         </Link>
         <Link to='3'>
-        <li className='w-72 h-96 flex flex-col justify-evenly p-4 bg-red-500'>
-          <img className='h-3/4 w-full' alt='poop'></img>
-          <p>{coffeeItems[3].title}</p>
+        <li className='w-72 h-96 flex flex-col justify-evenly p-4'>
+          <img className='h-3/4 w-full' alt={coffeeItems[3].title} src={coffeeItems[3].image}></img>
+          <strong>{coffeeItems[3].title}</strong>
         </li>
         </Link>
         <Link to='4'>
-        <li className='w-72 h-96 flex flex-col justify-evenly p-4 bg-red-500'>
-          <img className='h-3/4 w-full' alt='poop'></img>
-          <p>{coffeeItems[4].title}</p>
+        <li className='w-72 h-96 flex flex-col justify-evenly p-4'>
+          <img className='h-3/4 w-full' alt={coffeeItems[4].title} src={coffeeItems[4].image}></img>
+          <strong>{coffeeItems[4].title}</strong>
         </li>
         </Link>
         <Link to='5'>
-        <li className='w-72 h-96 flex flex-col justify-evenly p-4 bg-red-500'>
-          <img className='h-3/4 w-full' alt='poop'></img>
-          <p>{coffeeItems[5].title}</p>
+        <li className='w-72 h-96 flex flex-col justify-evenly p-4'>
+          <img className='h-3/4 w-full' alt={coffeeItems[5].title} src={coffeeItems[5].image}></img>
+          <strong>{coffeeItems[5].title}</strong>
         </li>
         </Link>
         <Link to='6'>
-        <li className='w-72 h-96 flex flex-col justify-evenly p-4 bg-red-500'>
-          <img className='h-3/4 w-full' alt='poop'></img>
-          <p>{coffeeItems[6].title}</p>
+        <li className='w-72 h-96 flex flex-col justify-evenly p-4'>
+          <img className='h-3/4 w-full' alt={coffeeItems[6].title} src={coffeeItems[6].image}></img>
+          <strong>{coffeeItems[6].title}</strong>
         </li>
         </Link>
         <Link to='7'>
-        <li className='w-72 h-96 flex flex-col justify-evenly p-4 bg-red-500'>
-          <img className='h-3/4 w-full' alt='poop'></img>
-          <p>{coffeeItems[7].title}</p>
+        <li className='w-72 h-96 flex flex-col justify-evenly p-4'>
+          <img className='h-3/4 w-full' alt={coffeeItems[7].title} src={coffeeItems[7].image}></img>
+          <strong>{coffeeItems[7].title}</strong>
         </li>
         </Link>
         <Link to='8'>
-        <li className='w-72 h-96 flex flex-col justify-evenly p-4 bg-red-500'>
-          <img className='h-3/4 w-full' alt='poop'></img>
-          <p>{coffeeItems[8].title}</p>
+        <li className='w-72 h-96 flex flex-col justify-evenly p-4'>
+          <img className='h-3/4 w-full' alt={coffeeItems[8].title} src={coffeeItems[8].image}></img>
+          <strong>{coffeeItems[8].title}</strong>
         </li>
         </Link>
       </ul>
