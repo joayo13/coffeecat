@@ -9,7 +9,7 @@ function MobileMenu({setMobileMenuActive, slide}) {
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
-        <div className='w-full h-full flex flex-col items-center justify-evenly font-extrabold text-7xl'>
+        <div className='w-full h-full flex flex-col items-center justify-evenly font-extrabold text-4xl'>
           <Link onClick={() => setMobileMenuActive(false)} to='/'>Home</Link>
           <Link onClick={() => setMobileMenuActive(false)} to='/coffees'>Coffee Shop</Link>
           <Link onClick={() => setMobileMenuActive(false)} to='/teas'>Tea Shop</Link>
