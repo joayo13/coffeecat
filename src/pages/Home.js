@@ -16,7 +16,7 @@ function Home() {
       </section>
       <h2 className='text-4xl md:text-7xl text-center py-4 customer-reviews'>Customer Reviews</h2>
       <ul className='px-2 w-full flex flex-col md:flex-row gap-2 text-xl md:text-center md:text-3xl md:justify-evenly'>
-        <li className='flex flex-col flex-1 md:items-center gap-2 py-4 px-4 bg-gradient-to-r from-yellow-900 to-neutral-800 rounded-lg'>
+        <li className='flex flex-col flex-1 md:items-center gap-2 py-4 px-4 bg-gradient-to-b from-yellow-900 to-neutral-900 rounded-lg'>
           <h3>John</h3>
           <h4 className='text-sm'>Iowa City, Iowa</h4>
           <div className='flex md:flex-col gap-2 md:gap-0 items-center'>
@@ -28,7 +28,7 @@ function Home() {
             <strong>"Yeah probably the best coffee I've ever tasted hands down."</strong>
           </div>
         </li>
-        <li className='flex flex-col flex-1 md:items-center gap-2 py-4 px-4 bg-gradient-to-r from-yellow-900 to-neutral-800 rounded-lg'>
+        <li className='flex flex-col flex-1 md:items-center gap-2 py-4 px-4 bg-gradient-to-b from-yellow-900 to-neutral-900 rounded-lg'>
           <h3>Billy</h3>
           <h4 className='text-sm'>Detroit, Michigan</h4>
           <div className='flex md:flex-col gap-2 md:gap-0 items-center'>
@@ -39,7 +39,7 @@ function Home() {
             <strong>"I liked the tea."</strong>
           </div>
         </li>
-        <li className='flex flex-col flex-1 md:items-center gap-2 py-4 px-4 bg-gradient-to-r from-yellow-900 to-neutral-800 rounded-lg'>
+        <li className='flex flex-col flex-1 md:items-center gap-2 py-4 px-4 bg-gradient-to-b from-yellow-900 to-neutral-900 rounded-lg'>
           <h3>Bart</h3>
           <h4 className='text-sm opacity-50'>Toronto, Ontario</h4>
           <div className='flex md:flex-col gap-2 md:gap-0 items-center'>

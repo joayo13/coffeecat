@@ -1,6 +1,6 @@
 import React from 'react'
 import teaItems from '../products/teaItems'
-
+// clipper teas? 
 function Teas() {
   return (
     <div className='bg-neutral-900 text-neutral-300'>
