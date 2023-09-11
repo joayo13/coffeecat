@@ -10,7 +10,7 @@ function Home() {
         <div className=' max-w-xl mx-auto'>
         <p>Here at Coffee Cat our mission is simple:
         <strong> Take over all of humanity and replace humans with AI-enhanced cat cyborgs.</strong></p>
-        <p>In all seriousness, our team of experts have searched the globe for the best coffees and teas and put them all right here for your convenience. 
+        <p>In all seriousness, our team of experts have searched the globe for the best cat-themed coffees and merch and put them all right here for your convenience. 
           Don't believe us? Well take a look at some of our non-paid-off customer reviews and you might just think twice.</p>
         </div>
       </section>
@@ -36,12 +36,12 @@ function Home() {
               src='https://www.onegreenplanet.org/wp-content/uploads/2014/07/m1lead.jpg'
               alt='billy the cat from toronto'
               className='rounded-full h-12 w-12 md:h-24 md:w-24 object-cover'></img>
-            <strong>"I liked the tea."</strong>
+            <strong>"I liked the mugs."</strong>
           </div>
         </li>
         <li className='flex flex-col flex-1 md:items-center gap-2 py-4 px-4 bg-gradient-to-b from-yellow-900 to-neutral-900 rounded-lg'>
           <h3>Bart</h3>
-          <h4 className='text-sm opacity-50'>Toronto, Ontario</h4>
+          <h4 className='text-sm'>Toronto, Ontario</h4>
           <div className='flex md:flex-col gap-2 md:gap-0 items-center'>
             <img 
               src='https://www.catster.com/wp-content/uploads/2018/06/Cat-screaming-mouth-open-making-noise.jpg.optimal.jpg'
@@ -73,9 +73,9 @@ function Home() {
           <div className='w-full rounded-md'>
             <div className='tea-shop-background h-36 md:h-64 w-full rounded-t-md overflow-hidden'></div>
             <div className='bg-neutral-900 rounded-b-md text-base p-2'>
-              <strong className='text-lg'>The Tea Kattle</strong>
+              <strong className='text-lg'>The Catalog</strong>
               <span className='flex justify-between items-end'>
-                <p>Explore our extensive online selection of exquisite teas, each thoughtfully curated to satisfy every palate.</p>
+                <p>Explore a world of whimsical and stylish cat-themed merchandise, from cozy sweaters to cute coffee mugs.</p>
                 <Link to='/teas' className='bg-neutral-300 text-neutral-800 font-extrabold py-2 px-4 rounded-md'>Shop</Link>
               </span>
               </div>
@@ -83,7 +83,7 @@ function Home() {
           <div className='w-full'>
             <div className='cat-hub-background h-36 md:h-64 w-full rounded-t-md overflow-hidden'></div>
             <div className='bg-neutral-900 rounded-b-md text-base p-2'>
-              <strong className='text-lg'>The Cathub</strong>
+              <strong className='text-lg'>Cathub</strong>
               <span className='flex justify-between items-end'>
                 <p>Come join us in applauding the extraordinary cats who make our lives better and brighter, one purr at a time. </p>
                 <Link to='/cats' className='bg-neutral-300 text-neutral-800 font-extrabold py-2 px-4 rounded-md'>Visit</Link>
