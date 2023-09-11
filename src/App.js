@@ -19,11 +19,12 @@ function App() {
   const [shoppingCartShowing, setShoppingCartShowing] = useState(false)
   const [mobileMenuActive, setMobileMenuActive] = useState(false)
   const [mobileMenuShowing, setMobileMenuShowing] = useState(false)
+  const [cartUpdated, setCartUpdated] = useState(true)
   return (
     <>
     <nav className="flex fixed w-full items-center justify-between md:h-32 h-16 px-2 bg-neutral-800 text-neutral-300 z-20">
       {shoppingCartShowing ? <>
-      {shoppingCartActive ? <ShoppingCart setShoppingCartActive={setShoppingCartActive} slide={'left'}/> : <ShoppingCart slide={'right'} setShoppingCartActive={setShoppingCartActive}/>}
+      {shoppingCartActive ? <ShoppingCart setShoppingCartActive={setShoppingCartActive} slide={'left'} cartUpdated={cartUpdated}/> : <ShoppingCart slide={'right'} setShoppingCartActive={setShoppingCartActive}/>}
       </> : null}
       {mobileMenuShowing ? <>
       {mobileMenuActive ? <MobileMenu slide={'left'} setMobileMenuActive={setMobileMenuActive}/> : <MobileMenu slide={'right'} setMobileMenuActive={setMobileMenuActive}/>}

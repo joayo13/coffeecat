@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-function ShoppingCart({setShoppingCartActive, slide}) {
+function ShoppingCart({setShoppingCartActive, slide, cartUpdated}) {
+  const [cart, setCart] = useState([])
+  useEffect(() => {
+    setCart(JSON.parse(localStorage.getItem('cart')))
+  },[])
   return (
     <div style={slide === 'left' ? {animation: 'slideLeft 1s ease forwards'} : {animation: 'slideRight 1s ease forwards'}} className='w-full text-center p-2 md:w-2/5 z-20 fixed right-0 top-0 h-full bg-neutral-900'>
         <strong className='text-2xl'>Shopping Cart</strong>
@@ -9,6 +13,7 @@ function ShoppingCart({setShoppingCartActive, slide}) {
   <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 </svg>
 </button>
+<ul>{cart.map((item) => <li>{item.title}</li>)}</ul>
     </div>
   )
 }

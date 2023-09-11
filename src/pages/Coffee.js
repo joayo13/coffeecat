@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import coffeeItems from '../products/coffeeItems'
+import { addToCart } from '../helpers/cartFunctions'
 
 function Coffee() {
   const item = useParams()
@@ -28,7 +29,7 @@ function Coffee() {
           <p className='opacity-50'>|</p>
           <button onClick={() => quantityHandler(1)}>+</button>
         </div>
-        <button className='bg-neutral-300 text-neutral-800 font-extrabold py-2 px-4 rounded-full'>Add to cart</button>
+        <button onClick={() => addToCart(coffeeItems[item.id], quantity) } className='bg-neutral-300 text-neutral-800 font-extrabold py-2 px-4 rounded-full'>Add to cart</button>
         </section>
     </div>
   )
