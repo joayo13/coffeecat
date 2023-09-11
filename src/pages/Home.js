@@ -14,7 +14,7 @@ function Home() {
           Don't believe us? Well take a look at some of our non-paid-off customer reviews and you might just think twice.</p>
         </div>
       </section>
-      <h2 className='text-4xl md:text-7xl text-center py-4 customer-reviews'>Customer Reviews</h2>
+      <h2 className='text-4xl md:text-7xl text-center py-4 pacifico'>Customer Reviews</h2>
       <ul className='px-2 w-full flex flex-col md:flex-row gap-2 text-xl md:text-center md:text-3xl md:justify-evenly'>
         <li className='flex flex-col flex-1 md:items-center gap-2 py-4 px-4 bg-gradient-to-b from-yellow-900 to-neutral-900 rounded-lg'>
           <h3>John</h3>

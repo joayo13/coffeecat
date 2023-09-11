@@ -54,8 +54,8 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/coffees" element={<Coffees/>}/>
       <Route path="/coffees/:id" element={<Coffee/>}/>
-      <Route path="/teas" element={<Teas/>}/>
-      <Route path="/teas/:id" element={<Tea/>}/>
+      <Route path="/catalog" element={<Teas/>}/>
+      <Route path="/catalog/:id" element={<Tea/>}/>
       <Route path="/cats" element={<Cats/>}/>
       <Route path="*" element={<NotFound/>}/>
     </Routes>

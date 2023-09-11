@@ -28,29 +28,20 @@ const teaItems = {
       desc: 'Voluptate dolor magna cupidatat Lorem qui. Magna non proident sint excepteur nisi cillum nulla. Ipsum culpa commodo eu nisi ullamco adipisicing cillum elit.'
     },  
     4: {
-      title: 'kitty cat tea',
-      price: 10.00,
-      category: 'decaf'
+      title: 'Dark Matter Yin-Yang Sweater',
+      price: 59.99,
+      image: 'https://www.pngkey.com/png/full/368-3687834_dark-matter-yin-yang-cat-sweater-yin-yang.png',
+      category: 'merch',
+      desc: 'Eiusmod aliqua aliquip consectetur nulla dolore. Esse in quis esse nulla. Culpa elit ad ut et culpa dolore id non cillum mollit adipisicing magna qui dolore. Duis cillum nisi exercitation fugiat. Duis nulla Lorem elit cillum cillum velit fugiat Lorem minim labore magna duis aliqua ut. Ad consequat excepteur ad officia ea ut proident dolore excepteur ipsum est et. Tempor mollit ex Lorem proident aute.'
     },  
     5: {
-      title: 'kitty cat tea',
-      price: 10.00,
-      category: 'decaf'
+      title: 'Kitty Town Coffee Baseball Cap',
+      price: 29.99,
+      image: 'https://www.kittytowncoffee.com/cdn/shop/products/spod-1059905104-1005-1_600x.png?v=1660961543',
+      category: 'merch',
+      desc: 'Duis anim consequat anim reprehenderit consectetur eu id ullamco sunt deserunt quis ut. Minim non eu est labore aliquip elit reprehenderit excepteur consequat reprehenderit non pariatur. Pariatur consequat pariatur irure ullamco ut cupidatat proident laborum do dolore mollit mollit. Amet anim in labore irure cupidatat in adipisicing enim mollit nisi mollit. Est nisi ad enim cillum incididunt laboris dolor in excepteur nulla Lorem ullamco. Labore adipisicing in pariatur ut duis duis. Exercitation incididunt reprehenderit consequat non eu.'
+
     },  
-    6: {
-        title: 'kitty cat tea',
-        price: 10.00,
-        category: 'decaf'
-    },  
-    7: {
-        title: 'kitty cat tea',
-        price: 10.00,
-        category: 'decaf'
-    },  
-    8: {
-        title: 'kitty cat tea',
-        price: 10.00,
-        category: 'decaf'
-    },  
+    
   }
   export default teaItems

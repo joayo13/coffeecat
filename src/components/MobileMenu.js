@@ -12,7 +12,7 @@ function MobileMenu({setMobileMenuActive, slide}) {
         <div className='w-full h-full flex flex-col items-center justify-evenly font-extrabold text-4xl'>
           <Link onClick={() => setMobileMenuActive(false)} to='/'>Home</Link>
           <Link onClick={() => setMobileMenuActive(false)} to='/coffees'>Coffee Shop</Link>
-          <Link onClick={() => setMobileMenuActive(false)} to='/teas'>Tea Shop</Link>
+          <Link onClick={() => setMobileMenuActive(false)} to='/catalog'>The Catalog</Link>
           <Link onClick={() => setMobileMenuActive(false)} to='/cats'>Cathub</Link>
         </div>
     </div>

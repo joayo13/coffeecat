@@ -27,32 +27,24 @@ function Teas() {
           <strong>{teaItems[2].title}</strong>
         </li>
         </Link>
-        <Link to='2'>
+        <Link to='3'>
         <li className='w-72 h-96 flex flex-col justify-evenly p-4'>
           <img className='h-3/4 w-full' alt={teaItems[3].title} src={teaItems[3].image}></img>
           <strong>{teaItems[3].title}</strong>
         </li>
         </Link>
-        <li className='w-72 h-96 flex flex-col justify-evenly p-4 bg-red-500'>
-          <img className='h-3/4 w-full' alt='poop'></img>
-          <p>{teaItems[4].title}</p>
+        <Link to='4'>
+        <li className='w-72 h-96 flex flex-col justify-evenly p-4'>
+          <img className='h-3/4 w-full' alt={teaItems[4].title} src={teaItems[4].image}></img>
+          <strong>{teaItems[4].title}</strong>
         </li>
-        <li className='w-72 h-96 flex flex-col justify-evenly p-4 bg-red-500'>
-          <img className='h-3/4 w-full' alt='poop'></img>
-          <p>{teaItems[5].title}</p>
+        </Link>
+        <Link to='5'>
+        <li className='w-72 h-96 flex flex-col justify-evenly p-4'>
+          <img className='h-3/4 w-full' alt={teaItems[5].title} src={teaItems[5].image}></img>
+          <strong>{teaItems[5].title}</strong>
         </li>
-        <li className='w-72 h-96 flex flex-col justify-evenly p-4 bg-red-500'>
-          <img className='h-3/4 w-full' alt='poop'></img>
-          <p>{teaItems[6].title}</p>
-        </li>
-        <li className='w-72 h-96 flex flex-col justify-evenly p-4 bg-red-500'>
-          <img className='h-3/4 w-full' alt='poop'></img>
-          <p>{teaItems[7].title}</p>
-        </li>
-        <li className='w-72 h-96 flex flex-col justify-evenly p-4 bg-red-500'>
-          <img className='h-3/4 w-full' alt='poop'></img>
-          <p>{teaItems[8].title}</p>
-        </li>
+        </Link>
       </ul>
       <p>Page 1 of 1</p>
       </section>
