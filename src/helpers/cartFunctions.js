@@ -1,11 +1,13 @@
 function addToCart(item, quantity) {
   let cart = JSON.parse(localStorage.getItem('cart'))
+  //check if item already exists in cart, if so, add additional quantity to existing item and save changes
     const exists = cart.find((elem) => elem.title === item.title)
     if(exists) {
       exists.quantity += quantity
       localStorage.setItem('cart', JSON.stringify(cart))
       return
     }
+  //otherwise, add new item to cart and save changes
   cart.push({...item, quantity})
   localStorage.setItem('cart', JSON.stringify(cart))
 }
