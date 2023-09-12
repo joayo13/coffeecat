@@ -2,9 +2,24 @@ import React, { useEffect, useState } from 'react'
 
 function ShoppingCart({setShoppingCartActive, slide, cartUpdated}) {
   const [cart, setCart] = useState([])
+  
   useEffect(() => {
-    setCart(JSON.parse(localStorage.getItem('cart')))
-  },[])
+  ///loop through array, if value is new, add to new array
+  const array = JSON.parse(localStorage.getItem('cart'))
+  console.log(JSON.parse(localStorage.getItem('cart')))
+  let newArray = []
+  for(const value in array) {
+    const existing = newArray.find((item) => item.title === array[value].title)
+    if(existing) {
+      existing.quantity ++
+    } else {
+      newArray.push(array[value])
+    }
+  }
+  //setcart to newarray 
+  console.log(newArray)
+  setCart(newArray)
+  },[cartUpdated])
   return (
     <div style={slide === 'left' ? {animation: 'slideLeft 1s ease forwards'} : {animation: 'slideRight 1s ease forwards'}} className='w-full text-center p-2 md:w-2/5 z-20 fixed right-0 top-0 h-full bg-neutral-900'>
         <strong className='text-2xl'>Shopping Cart</strong>
