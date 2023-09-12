@@ -1,12 +1,13 @@
 function addToCart(item, quantity) {
-  let prev = []
-  if(localStorage.getItem('cart')) {
-    prev = JSON.parse(localStorage.getItem('cart'))
-  }
-  for(let i = 0; i < quantity; i++) {
-  prev.push(item)
-  }
-  localStorage.setItem('cart', JSON.stringify(prev))
+  let cart = JSON.parse(localStorage.getItem('cart'))
+    const exists = cart.find((elem) => elem.title === item.title)
+    if(exists) {
+      exists.quantity += quantity
+      localStorage.setItem('cart', JSON.stringify(cart))
+      return
+    }
+  cart.push({...item, quantity})
+  localStorage.setItem('cart', JSON.stringify(cart))
 }
 function checkIfRemoveOrDecrement(product, cart) {
   for(const item in cart) {
