@@ -12,7 +12,7 @@ function ShoppingCart({setShoppingCartActive, slide, cartUpdated}) {
   const cartData = JSON.parse(localStorage.getItem('cart'))
   setCart(cartData)
   cartData.length === 1 ? setTotalPrice(cartData[0].price * cartData[0].quantity) :
-  setTotalPrice(cartData.reduce((prev, acc) => (prev.price * prev.quantity) + (acc.price * acc.quantity)))
+  setTotalPrice(cartData.reduce((total, curVal) => total + (curVal.price * curVal.quantity), 0))
   },[cartUpdated])
   return (
     <div style={slide === 'left' ? {animation: 'slideLeft 1s ease forwards'} : {animation: 'slideRight 1s ease forwards'}} className='w-full text-center p-2 md:w-2/5 z-20 fixed right-0 top-0 h-full bg-neutral-900'>
@@ -25,6 +25,7 @@ function ShoppingCart({setShoppingCartActive, slide, cartUpdated}) {
       <ul className='flex flex-col gap-2'>{cart.map((item) => <CartItem cartItemData={item}/>)}</ul>
       <div className='absolute bottom-2 w-full flex justify-center'>
       <button className='bg-neutral-300 text-neutral-800 font-extrabold py-2 px-4 rounded-full'>Checkout ({totalPrice})</button>
+      <button onClick={() => clearCart() }>Clear</button>
       </div>
     </div>
   )
