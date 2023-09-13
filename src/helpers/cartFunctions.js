@@ -1,5 +1,9 @@
 function addToCart(item, quantity) {
-  let cart = JSON.parse(localStorage.getItem('cart'))
+  let cart = []
+  if(localStorage.getItem('cart')) {
+    cart = JSON.parse(localStorage.getItem('cart'))
+  }
+  console.log(cart)
   //check if item already exists in cart, if so, add additional quantity to existing item and save changes
     const exists = cart.find((elem) => elem.title === item.title)
     if(exists) {
@@ -23,11 +27,14 @@ function checkIfRemoveOrDecrement(product, cart) {
   }
 }
 function removeFromCart(product) {
-  let prev = {}
+  let prev = []
   if(localStorage.getItem('cart')) {
     prev = localStorage.getItem('cart')
   }
   localStorage.setItem('cart', checkIfRemoveOrDecrement(product, prev))
 }
+function clearCart() {
+  localStorage.setItem('cart', [])
+}
 
-export {addToCart, removeFromCart}
+export {addToCart, removeFromCart, clearCart}

@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from 'react'
+import { clearCart } from '../helpers/cartFunctions'
 import CartItem from './CartItem'
 
 function ShoppingCart({setShoppingCartActive, slide, cartUpdated}) {
   const [cart, setCart] = useState([])
   const [totalPrice, setTotalPrice] = useState(0)
   useEffect(() => {
+  if(!localStorage.getItem('cart')) {
+    return
+  }
   const cartData = JSON.parse(localStorage.getItem('cart'))
   setCart(cartData)
+  cartData.length === 1 ? setTotalPrice(cartData[0].price * cartData[0].quantity) :
   setTotalPrice(cartData.reduce((prev, acc) => (prev.price * prev.quantity) + (acc.price * acc.quantity)))
   },[cartUpdated])
   return (
