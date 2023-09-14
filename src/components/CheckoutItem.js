@@ -2,19 +2,22 @@ import React from 'react'
 
 function CheckoutItem({cartItemData, totalPrice}) {
   const thisItemsTotalPrice = cartItemData.price * cartItemData.quantity
+  function preventMoreThan30chars(str) {
+    let newStr = str
+    if(str.length > 30) {
+     newStr = str.slice(0, 30) + '...'
+    }
+    return newStr
+  }
   return (
-    <li className='w-72 h-96'>
-      <img className='h-3/4 w-full' alt={cartItemData.title} src={cartItemData.image}></img>
-      <strong>{cartItemData.title} ({cartItemData.quantity}) - ${thisItemsTotalPrice}</strong>
-      <span className='flex gap-2 justify-center'>
-        <div className='mb-2 py-2 px-4 rounded-lg flex gap-4 bg-neutral-300 text-neutral-800 text-lg font-extrabold'>
-          <button>-</button>
-          <p className='opacity-50'>|</p>
-          <p>{cartItemData.quantity}</p>
-          <p className='opacity-50'>|</p>
-          <button>+</button>
-        </div>
-      </span>
+    <li className='w-full flex gap-2 items-center'>
+      <img className='h-12 w-12 object-cover' alt={cartItemData.title} src={cartItemData.image}></img>
+      <strong className='text-sm md:text-lg w-24 md:w-80'>{preventMoreThan30chars(cartItemData.title)}</strong>
+      <div className='flex items-center justify-center h-12 w-12 bg-neutral-700 text-neutral-300 font-extrabold'>
+        <input onInput={(e) => alert(e.target.value)} type='number' className='h-12 w-12 bg-neutral-700 text-center text-neutral-300 font-extrabold' defaultValue={cartItemData.quantity}></input>
+      </div>
+      <strong>${thisItemsTotalPrice}</strong>
+      <button className='text-red-500 text-sm md:text-base'>Remove</button>
     </li>
   )
 }

@@ -4,6 +4,15 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #171717;
+}
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0; 
 }
 .coffee-shop-background {
     background-image: url('https://img.freepik.com/premium-photo/cup-hot-coffee-latte-table-cafe-with-shallow-depth-field_258743-129.jpg');

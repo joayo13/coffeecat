@@ -64,11 +64,6 @@ function App() {
     </Routes>
     <footer className="flex relative items-center justify-evenly md:h-32 h-16 px-2 bg-neutral-800 text-neutral-300">
       <p>Coffee Cat</p>
-      <div>
-      <p>Contact</p>
-      <p>Privacy Policy</p>
-      <p>Terms Of Service</p>
-      </div>
       <p>https://github.com/joayo13/coffeecat</p>
     </footer>
     </>

@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-function CartItem({cartItemData}) {
+function CartItem({cartItemData, setShoppingCartActive}) {
   return (
     <li className='flex flex-col items-center'>
       <img alt={cartItemData.title} src={cartItemData.image} className="w-full h-32 object-contain"></img>
       <strong>{cartItemData.title} ({cartItemData.quantity})</strong>
-      <button className='bg-neutral-300 block text-sm text-neutral-800 font-extrabold py-1 px-2 rounded-full mt-2'>Edit / Remove</button>
+      <Link to='/checkout' onClick={() => setShoppingCartActive(false)} className='block text-sm text-neutral-300 font-extrabold underline'>Edit / Remove</Link>
     </li>
   )
 }

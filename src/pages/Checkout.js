@@ -14,16 +14,15 @@ function Checkout({cartUpdated, setCartUpdated}) {
     },[cartUpdated])
   return (
     <div className='bg-neutral-900 text-neutral-300'>
-      <section className='text-center flex flex-col items-center'>
-      <strong className='text-6xl py-2'>Checkout</strong>
-      <h3 className='underline'>Items in cart ({cart.length})</h3>
-      <ul className='flex flex-col md:flex-row md:max-w-screen-lg justify-center gap-2 flex-wrap'>
+      <section className='flex flex-col items-center'>
+      <strong className='text-6xl py-4 text-center'>Shopping Cart</strong>
+      <ul className='flex flex-col bg-neutral-800 justify-center rounded-lg gap-2 p-2 flex-wrap'>
       {cart.map((item) => <CheckoutItem cartItemData={item} totalPrice={totalPrice}/>)}
+      <strong className='text-center text-lg'>Total Price Before Taxes: ${totalPrice}</strong>
       </ul>
       </section>
       <section className='text-center flex flex-col items-center'>
-        <strong className='text-6xl py-2'>Total Price: ${totalPrice}</strong>
-        <button className='bg-green-700 text-neutral-300'>Continue With Stripe</button>
+        <button className='bg-green-700 text-neutral-300 py-2 px-4 rounded-full my-2'>Continue With Stripe</button>
       </section>
     </div>
   )
