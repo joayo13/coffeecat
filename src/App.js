@@ -10,6 +10,7 @@ import catHead from './cathead.png'
 import ShoppingCart from "./components/ShoppingCart";
 import { useState } from "react";
 import MobileMenu from "./components/MobileMenu";
+import Checkout from "./pages/Checkout";
 
 
 
@@ -58,6 +59,7 @@ function App() {
       <Route path="/catalog" element={<Teas/>}/>
       <Route path="/catalog/:id" element={<Tea/>}/>
       <Route path="/cats" element={<Cats/>}/>
+      <Route path="/checkout" element={<Checkout/>}/>
       <Route path="*" element={<NotFound/>}/>
     </Routes>
     <footer className="flex relative items-center justify-evenly md:h-32 h-16 px-2 bg-neutral-800 text-neutral-300">
