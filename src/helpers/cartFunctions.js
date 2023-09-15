@@ -19,12 +19,9 @@ function quantityHandler(quantity, itemTitle, setCartUpdated) {
   if(quantity) {
     const cart = JSON.parse(localStorage.getItem('cart'))
     const product = cart.find((item) => item.title === itemTitle)
-      if(quantity <= 0) {
-        cart.splice(cart.indexOf(product), 1)
-        localStorage.setItem('cart', JSON.stringify(cart))
-        setCartUpdated(true)
+      if(quantity <= 0 || quantity > 9) {
         return
-      }
+      } 
       product.quantity = quantity
       localStorage.setItem('cart', JSON.stringify(cart))
       setCartUpdated(true)

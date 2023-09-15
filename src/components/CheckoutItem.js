@@ -14,9 +14,9 @@ function CheckoutItem({cartItemData, setCartUpdated}) {
     <li className='w-full flex gap-2 items-center'>
       <img className='h-12 w-12 object-cover' alt={cartItemData.title} src={cartItemData.image}></img>
       <strong className='text-sm md:text-lg w-24 md:w-80'>{preventMoreThan30chars(cartItemData.title)}</strong>
-      <div className='flex items-center justify-center h-12 w-12 bg-neutral-700 text-neutral-300 font-extrabold'>
-        <input onInput={(e) => quantityHandler(e.target.value, cartItemData.title, setCartUpdated)} type='number' className='h-12 w-12 bg-neutral-700 text-center text-neutral-300 font-extrabold' defaultValue={cartItemData.quantity}></input>
-      </div>
+      <form onSubmit={(e) => {e.preventDefault(); alert('hello')}} className='flex items-center justify-center h-12 w-12 bg-neutral-700 text-neutral-300 font-extrabold'>
+        <input onInput={(e) => quantityHandler(e.target.value, cartItemData.title, setCartUpdated)} type='number' min={1} max={9} className='h-12 w-12 bg-neutral-700 text-center text-neutral-300 font-extrabold' defaultValue={cartItemData.quantity}></input>
+      </form>
       <strong>${thisItemsTotalPrice}</strong>
       <button className='text-red-500 text-sm md:text-base'>Remove</button>
     </li>
