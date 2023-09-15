@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import coffeeItems from '../products/coffeeItems'
 import { addToCart } from '../helpers/cartFunctions'
 
-function Coffee({setCartUpdated, cartUpdated, setShoppingCartActive}) {
+function Coffee({setCartUpdated, cartUpdated, setShoppingCartActive, setShoppingCartShowing}) {
   const item = useParams()
   const [quantity, setQuantity] = useState(1)
 
@@ -29,7 +29,7 @@ function Coffee({setCartUpdated, cartUpdated, setShoppingCartActive}) {
           <p className='opacity-50'>|</p>
           <button onClick={() => quantityHandler(1)}>+</button>
         </div>
-        <button onClick={() => {addToCart(coffeeItems[item.id], quantity); setCartUpdated(true); setShoppingCartActive(true)} } className='bg-neutral-300 text-neutral-800 font-extrabold py-2 px-4 rounded-full'>Add to cart</button>
+        <button onClick={() => {addToCart(coffeeItems[item.id], quantity); setCartUpdated(true); setShoppingCartShowing(true); setShoppingCartActive(true)} } className='bg-neutral-300 text-neutral-800 font-extrabold py-2 px-4 rounded-full'>Add to cart</button>
         </section>
     </div>
   )
