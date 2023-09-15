@@ -27,5 +27,8 @@ function quantityHandler(quantity, itemTitle, setCartUpdated) {
       setCartUpdated(true)
     }
 }
+function clearCart () {
+  localStorage.setItem('cart', [])
+}
 
-export {addToCart, quantityHandler}
+export {addToCart, quantityHandler, clearCart}

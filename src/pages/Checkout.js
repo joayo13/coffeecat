@@ -12,6 +12,27 @@ function Checkout({cartUpdated, setCartUpdated}) {
     setCart(cartData)
     setTotalPrice(cartData.reduce((total, curVal) => total + (curVal.price * curVal.quantity), 0).toFixed(2))
     },[cartUpdated])
+    function handlePayment () {
+      fetch("http://localhost:3100/create-checkout-session", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      items: cart,
+    }),
+  })
+    .then(res => {
+      if (res.ok) return res.json()
+      return res.json().then(json => Promise.reject(json))
+    })
+    .then(({ url }) => {
+      window.location = url
+    })
+    .catch(e => {
+      console.error(e)
+    })
+    }
   return (
     <div className='bg-neutral-900 text-neutral-300'>
       <section className='flex flex-col items-center'>
@@ -22,7 +43,7 @@ function Checkout({cartUpdated, setCartUpdated}) {
       </ul>
       </section>
       <section className='text-center flex flex-col items-center'>
-        <button className='bg-green-700 text-neutral-300 py-2 px-4 rounded-full my-2'>Continue With Stripe</button>
+        <button onClick={() => handlePayment()} className='bg-green-700 text-neutral-300 py-2 px-4 rounded-full my-2'>Continue With Stripe</button>
       </section>
     </div>
   )
