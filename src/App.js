@@ -8,7 +8,7 @@ import Tea from "./pages/Tea";
 import NotFound from "./pages/NotFound";
 import catHead from './cathead.png'
 import ShoppingCart from "./components/ShoppingCart";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MobileMenu from "./components/MobileMenu";
 import Checkout from "./pages/Checkout";
 
@@ -20,7 +20,10 @@ function App() {
   const [shoppingCartShowing, setShoppingCartShowing] = useState(false)
   const [mobileMenuActive, setMobileMenuActive] = useState(false)
   const [mobileMenuShowing, setMobileMenuShowing] = useState(false)
-  const [cartUpdated, setCartUpdated] = useState(true)
+  const [cartUpdated, setCartUpdated] = useState(false)
+  useEffect(() => {
+    setCartUpdated(false)
+  },[cartUpdated])
   return (
     <>
     <nav className="flex fixed w-full items-center justify-between md:h-32 h-16 px-2 bg-neutral-800 text-neutral-300 z-20">
@@ -55,11 +58,11 @@ function App() {
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/coffees" element={<Coffees/>}/>
-      <Route path="/coffees/:id" element={<Coffee/>}/>
+      <Route path="/coffees/:id" element={<Coffee setCartUpdated={setCartUpdated} cartUpdated={cartUpdated} setShoppingCartActive={setShoppingCartActive}/>}/>
       <Route path="/catalog" element={<Teas/>}/>
-      <Route path="/catalog/:id" element={<Tea/>}/>
+      <Route path="/catalog/:id" element={<Tea setCartUpdated={setCartUpdated} cartUpdated={cartUpdated} setShoppingCartActive={setShoppingCartActive}/>}/>
       <Route path="/cats" element={<Cats/>}/>
-      <Route path="/checkout" element={<Checkout/>}/>
+      <Route path="/checkout" element={<Checkout setCartUpdated={setCartUpdated} cartUpdated={cartUpdated}/>}/>
       <Route path="*" element={<NotFound/>}/>
     </Routes>
     <footer className="flex relative items-center justify-evenly md:h-32 h-16 px-2 bg-neutral-800 text-neutral-300">

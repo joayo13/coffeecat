@@ -17,7 +17,7 @@ function Checkout({cartUpdated, setCartUpdated}) {
       <section className='flex flex-col items-center'>
       <strong className='text-6xl py-4 text-center'>Shopping Cart</strong>
       <ul className='flex flex-col bg-neutral-800 justify-center rounded-lg gap-2 p-2 flex-wrap'>
-      {cart.map((item) => <CheckoutItem cartItemData={item} totalPrice={totalPrice}/>)}
+      {cart.map((item) => <CheckoutItem cartItemData={item} totalPrice={totalPrice} setCartUpdated={setCartUpdated}/>)}
       <strong className='text-center text-lg'>Total Price Before Taxes: ${totalPrice}</strong>
       </ul>
       </section>

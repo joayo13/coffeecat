@@ -15,26 +15,20 @@ function addToCart(item, quantity) {
   cart.push({...item, quantity})
   localStorage.setItem('cart', JSON.stringify(cart))
 }
-function checkIfRemoveOrDecrement(product, cart) {
-  for(const item in cart) {
-    if(item.title === product.title) {
-        if(item.quanity - 1 === 0) {
-            localStorage.setItem('cart', cart.filter(!item))
-            return
-        }
-        localStorage.setItem('cart', cart.map((item) => item.title === product.title ? item.quantity === item.quantity - 1 : item))
+function quantityHandler(quantity, itemTitle, setCartUpdated) {
+  if(quantity) {
+    const cart = JSON.parse(localStorage.getItem('cart'))
+    const product = cart.find((item) => item.title === itemTitle)
+      if(quantity <= 0) {
+        cart.splice(cart.indexOf(product), 1)
+        localStorage.setItem('cart', JSON.stringify(cart))
+        setCartUpdated(true)
+        return
+      }
+      product.quantity = quantity
+      localStorage.setItem('cart', JSON.stringify(cart))
+      setCartUpdated(true)
     }
-  }
-}
-function removeFromCart(product) {
-  let prev = []
-  if(localStorage.getItem('cart')) {
-    prev = localStorage.getItem('cart')
-  }
-  localStorage.setItem('cart', checkIfRemoveOrDecrement(product, prev))
-}
-function clearCart() {
-  localStorage.setItem('cart', [])
 }
 
-export {addToCart, removeFromCart, clearCart}
+export {addToCart, quantityHandler}
