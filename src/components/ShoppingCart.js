@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { clearCart } from '../helpers/cartFunctions'
 import CartItem from './CartItem'
 
 function ShoppingCart({setShoppingCartActive, slide, cartUpdated}) {
@@ -25,7 +24,6 @@ function ShoppingCart({setShoppingCartActive, slide, cartUpdated}) {
       <ul className='flex flex-col gap-2 h-[90%] overflow-y-scroll'>{cart.map((item) => <CartItem cartItemData={item} setShoppingCartActive={setShoppingCartActive}/>)}</ul>
       <div className='absolute bottom-2 w-full flex justify-center'>
       <Link onClick={() => setShoppingCartActive(false)} to="/checkout" className='bg-neutral-300 text-neutral-800 font-extrabold py-2 px-4 rounded-full'>Checkout ({totalPrice})</Link>
-      <button onClick={() => clearCart()}>Clear cart</button>
       </div>
     </div>
   )

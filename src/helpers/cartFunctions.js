@@ -27,8 +27,14 @@ function quantityHandler(quantity, itemTitle, setCartUpdated) {
       setCartUpdated(true)
     }
 }
-function clearCart () {
-  localStorage.setItem('cart', [])
+function removeFromCart (productTitle, setCartUpdated) {
+  let cart = []
+  if(localStorage.getItem('cart')) {
+    cart = JSON.parse(localStorage.getItem('cart'))
+    cart = cart.filter((item) => item.title !== productTitle)
+    localStorage.setItem('cart', JSON.stringify(cart))
+    setCartUpdated(true)
+  }
 }
 
-export {addToCart, quantityHandler, clearCart}
+export {addToCart, quantityHandler, removeFromCart}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { quantityHandler } from '../helpers/cartFunctions'
+import { quantityHandler, removeFromCart } from '../helpers/cartFunctions'
 
 function CheckoutItem({cartItemData, setCartUpdated}) {
   const thisItemsTotalPrice = cartItemData.price * cartItemData.quantity
@@ -19,7 +19,7 @@ function CheckoutItem({cartItemData, setCartUpdated}) {
         <input id='quantity' type='number' min={1} max={9} className='h-12 w-12 bg-neutral-700 text-center text-neutral-300 font-extrabold' defaultValue={cartItemData.quantity}></input>
       </form>
       <strong>${thisItemsTotalPrice}</strong>
-      <button className='text-red-500 text-sm md:text-base'>Remove</button>
+      <button onClick={() => removeFromCart(cartItemData.title, setCartUpdated) } className='text-red-500 text-sm md:text-base'>Remove</button>
     </li>
   )
 }
