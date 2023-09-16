@@ -13,7 +13,7 @@ function Checkout({cartUpdated, setCartUpdated}) {
     setTotalPrice(cartData.reduce((total, curVal) => total + (curVal.price * curVal.quantity), 0).toFixed(2))
     },[cartUpdated])
     function handlePayment () {
-      fetch("http://localhost:3100/create-checkout-session", {
+      fetch("https://lilac-anemone-wig.cyclic.cloud/create-checkout-session", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
