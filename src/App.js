@@ -25,7 +25,7 @@ function App() {
     setCartUpdated(false)
   },[cartUpdated])
   return (
-    <>
+    <div className="relative">
     <nav className="flex fixed w-full items-center justify-between md:h-32 h-16 px-2 bg-neutral-800 text-neutral-300 z-20">
       {shoppingCartShowing ? <>
       {shoppingCartActive ? <ShoppingCart setShoppingCartActive={setShoppingCartActive} slide={'left'} cartUpdated={cartUpdated}/> : <ShoppingCart slide={'right'} setShoppingCartActive={setShoppingCartActive}/>}
@@ -69,7 +69,7 @@ function App() {
       <p>Coffee Cat</p>
       <p>https://github.com/joayo13/coffeecat</p>
     </footer>
-    </>
+    </div>
   );
 }
 

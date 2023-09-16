@@ -76,7 +76,7 @@ function Home() {
               <strong className='text-lg'>The Catalog</strong>
               <span className='flex justify-between items-end'>
                 <p>Explore a world of whimsical and stylish cat-themed merchandise, from cozy sweaters to cute coffee mugs.</p>
-                <Link to='/teas' className='bg-neutral-300 text-neutral-800 font-extrabold py-2 px-4 rounded-md'>Shop</Link>
+                <Link to='/catalog' className='bg-neutral-300 text-neutral-800 font-extrabold py-2 px-4 rounded-md'>Shop</Link>
               </span>
               </div>
           </div>

@@ -42,8 +42,25 @@ function Checkout({cartUpdated, setCartUpdated}) {
       <strong className='text-center text-lg'>Total Price Before Taxes: ${totalPrice}</strong>
       </ul>
       </section>
-      <section className='text-center flex flex-col items-center'>
-        <button onClick={() => handlePayment()} className='bg-green-700 text-neutral-300 py-2 px-4 rounded-full my-2'>Continue With Stripe</button>
+      <section className='max-w-xl py-2 px-5 mx-auto flex flex-col items-center'>
+      <button onClick={() => handlePayment()} className='bg-neutral-800 text-neutral-300 py-2 px-4 flex items-center gap-2 rounded-full my-2 h-12'><strong>Checkout with</strong> <img alt='stripe logo' className='w-10' src='https://cdn-icons-png.flaticon.com/512/5968/5968382.png'></img></button>
+        <strong className='text-center'>Streamlined and Secure Checkout Experience with Stripe</strong>
+        <p>Experience the future of online shopping with our secure checkout powered by Stripe! At Coffee Cat,
+           we prioritize the safety and convenience of our customers,
+            and our checkout process is no exception. With Stripe's cutting-edge payment technology, you can shop with confidence,
+             knowing your sensitive information is protected every step of the way.
+        </p>
+        <strong>Key features:</strong>
+        <ol className='list-decimal'>
+          <li><strong>Robust Security:</strong> Stripe employs industry-leading security measures to safeguard your payment information. Our checkout process is fully compliant with Payment Card Industry Data Security Standard (PCI DSS) requirements, ensuring your data is protected from potential threats.</li>
+          <li><strong>Seamless Integration:</strong> We've seamlessly integrated Stripe into our checkout process, offering you a smooth and hassle-free experience. Say goodbye to cumbersome forms and enjoy a streamlined payment process that saves you time.</li>
+          <li><strong>Multiple Payment Options:</strong> Pay the way you want with a wide range of payment options supported by Stripe. Whether you prefer credit cards, debit cards, Apple Pay, Google Pay, or even Bitcoin, we've got you covered.</li>
+          <li><strong>Real-time Validation:</strong> Stripe's real-time validation helps prevent errors and ensures the accuracy of your payment information, reducing the risk of payment failures.</li>
+          <li><strong>Mobile-Friendly:</strong> Our Stripe-powered checkout is designed with mobile users in mind. Whether you're shopping on your smartphone or tablet, you'll have the same secure and user-friendly experience.</li>
+          <li><strong>Fraud Detection:</strong> Stripe's advanced machine learning algorithms constantly monitor transactions for suspicious activity, providing an additional layer of security against fraud.</li>
+          <li><strong>Transparent Pricing:</strong> Rest easy knowing that you won't encounter hidden fees or unexpected charges. Stripe offers transparent pricing, so you know exactly what you're paying for.</li>
+          <li><strong>Customer Support:</strong> Should you have any questions or encounter any issues during the checkout process, our dedicated customer support team is here to assist you promptly.</li>
+        </ol>
       </section>
     </div>
   )
