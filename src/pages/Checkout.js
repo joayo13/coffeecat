@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import CheckoutItem from '../components/CheckoutItem'
+import { scrollToTop } from '../helpers/scrollToTop'
 
 function Checkout({cartUpdated, setCartUpdated}) {
   const [cart, setCart] = useState([])
   const [totalPrice, setTotalPrice] = useState(0)
+  useEffect(() => {
+    scrollToTop()
+  },[])
   useEffect(() => {
     if(!localStorage.getItem('cart')) {
       return

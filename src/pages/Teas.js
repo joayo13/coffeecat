@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { scrollToTop } from '../helpers/scrollToTop'
 import teaItems from '../products/teaItems'
 // clipper teas? 
 function Teas() {
+  useEffect(() => {
+    scrollToTop()
+  },[])
   return (
     <div className='bg-neutral-900 text-neutral-300'>
       <section className='text-center flex flex-col items-center'>

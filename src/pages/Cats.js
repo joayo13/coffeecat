@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { scrollToTop } from '../helpers/scrollToTop'
 
 function Cats() {
+  useEffect(() => {
+    scrollToTop()
+  },[])
   return (
     <div className='bg-neutral-900 text-neutral-300'>
       <section className='flex flex-col w-full items-center py-2 px-2'>

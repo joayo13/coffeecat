@@ -1,11 +1,15 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import coffeeItems from '../products/coffeeItems'
 import { addToCart } from '../helpers/cartFunctions'
+import { scrollToTop } from '../helpers/scrollToTop'
 
 function Coffee({setCartUpdated, cartUpdated, setShoppingCartActive, setShoppingCartShowing}) {
   const item = useParams()
   const [quantity, setQuantity] = useState(1)
+  useEffect(() => {
+    scrollToTop()
+  },[])
 
   function quantityHandler (amount) {
     if(quantity + amount >= 1) {

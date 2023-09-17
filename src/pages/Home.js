@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { scrollToTop } from '../helpers/scrollToTop'
 function Home() {
+  useEffect(() => {
+    scrollToTop()
+  },[])
 
   return (
     <div className='bg-neutral-900 text-neutral-300'>
