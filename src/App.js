@@ -65,9 +65,19 @@ function App() {
       <Route path="/checkout" element={<Checkout setCartUpdated={setCartUpdated} cartUpdated={cartUpdated}/>}/>
       <Route path="*" element={<NotFound/>}/>
     </Routes>
-    <footer className="flex relative items-center justify-evenly md:h-32 h-16 px-2 bg-neutral-800 text-neutral-300">
-      <p>Coffee Cat</p>
-      <p>https://github.com/joayo13/coffeecat</p>
+    <footer className="flex relative items-center justify-evenly px-2 bg-neutral-800 text-neutral-300">
+      <ul className="flex flex-col items-center">
+      <strong>Coffee Cat</strong>
+      <Link to='/privacy'>Privacy Policy</Link>
+      <Link to='/tou'>Terms Of Use</Link>
+      <Link to='/copyright'>Copyright & Legal</Link>
+      </ul>
+      <ul className="flex flex-col items-center">
+      <strong>Contact</strong>
+      <p>123-456-7890</p>
+      <p>coffee@cat.com</p>
+      <Link to='https://github.com/joayo13'>Github</Link>
+      </ul>
     </footer>
     </div>
   );
