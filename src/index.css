@@ -6,6 +6,18 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: #171717;
 }
+.cart::-webkit-scrollbar {
+    width: 5px;
+    scrollbar-color: dark;
+}
+.cart::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+.cart::-webkit-scrollbar-thumb {
+    background-color: rgb(55,55,55);
+    border-radius: 10px;
+  }
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
   }
