@@ -6,7 +6,13 @@ function NotFound() {
     scrollToTop()
   },[])
   return (
-    <div>NotFound</div>
+    <div>
+      <div className='hb'>
+      <div className='hb1'></div>
+      <div className='hb2'></div>
+      <div className='hb3'></div>
+      </div>
+    </div>
   )
 }
 
