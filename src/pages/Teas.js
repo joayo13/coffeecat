@@ -11,7 +11,7 @@ function Teas() {
     <div className='bg-neutral-900 text-neutral-300'>
       <section className='text-center flex flex-col items-center'>
       <strong className='text-6xl py-2'>The Catalog</strong>
-      <h3 className='underline'>All Products</h3>
+      <h3>All Products</h3>
       <ul className='flex flex-col md:flex-row md:max-w-screen-lg justify-center gap-2 flex-wrap'>
         <Link to='0'>
         <li className='w-72 h-96 flex flex-col justify-evenly p-4'>
