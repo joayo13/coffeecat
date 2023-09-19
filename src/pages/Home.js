@@ -62,8 +62,8 @@ function Home() {
         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
     </svg>
 </div>
-        <h2 className='text-4xl md:text-7xl text-center py-4 relative z-10'><strong>So what are you waiting for? Lets get to shopping.</strong></h2>
-        <ul className='flex w-full gap-2 items-center md:flex-row md:justify-evenly py-8 px-2 flex-col relative z-10'>
+        <h2 className='text-4xl md:text-7xl text-center py-4 relative'><strong>So what are you waiting for? Lets get to shopping.</strong></h2>
+        <ul className='flex w-full gap-2 items-center md:flex-row md:justify-evenly py-8 px-2 flex-col relative'>
           <div className='w-full'>
             <div className='coffee-shop-background h-36 md:h-64 w-full rounded-t-md overflow-hidden'></div>
             <div className='bg-neutral-900 rounded-b-md text-base p-2'>
