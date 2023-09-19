@@ -65,34 +65,37 @@ function Home() {
         <h2 className='text-4xl md:text-7xl text-center py-4 relative'><strong>So what are you waiting for? Lets get to shopping.</strong></h2>
         <ul className='flex w-full gap-2 items-center md:flex-row md:justify-evenly py-8 px-2 flex-col relative'>
           <div className='w-full'>
-            <div className='coffee-shop-background h-36 md:h-64 w-full rounded-t-md overflow-hidden'></div>
-            <div className='bg-neutral-900 rounded-b-md text-base p-2'>
+            <div className='coffee-shop-background relative h-48 md:h-96 w-full rounded-md overflow-hidden'>
+            <div className='absolute bg-black bg-opacity-80 bottom-0 rounded-b-md text-base p-2'>
               <strong className='text-lg'>Cat Café</strong>
               <span className='flex justify-between items-end'>
                 <p>Indulge in the world of limited "Meowsterpiece" coffee blends, lovingly crafted to celebrate the art of coffee.</p>
                 <Link to='/coffees' className='bg-neutral-300 text-neutral-800 font-extrabold py-2 px-4 rounded-md'>Shop</Link>
               </span>
             </div>
+            </div>
           </div>
           <div className='w-full rounded-md'>
-            <div className='tea-shop-background h-36 md:h-64 w-full rounded-t-md overflow-hidden'></div>
-            <div className='bg-neutral-900 rounded-b-md text-base p-2'>
+            <div className='tea-shop-background relative h-48 md:h-96 w-full rounded-md overflow-hidden'>
+            <div className='bg-black absolute bottom-0 bg-opacity-80 rounded-b-md text-base p-2'>
               <strong className='text-lg'>The Catalog</strong>
               <span className='flex justify-between items-end'>
                 <p>Explore a world of whimsical and stylish cat-themed merchandise, from cozy sweaters to cute coffee mugs.</p>
                 <Link to='/catalog' className='bg-neutral-300 text-neutral-800 font-extrabold py-2 px-4 rounded-md'>Shop</Link>
               </span>
               </div>
+            </div>
           </div>
           <div className='w-full'>
-            <div className='cat-hub-background h-36 md:h-64 w-full rounded-t-md overflow-hidden'></div>
-            <div className='bg-neutral-900 rounded-b-md text-base p-2'>
+            <div className='cat-hub-background relative h-48 md:h-96 w-full rounded-md overflow-hidden'>
+            <div className='bg-black bg-opacity-80 absolute bottom-0 rounded-b-md text-base p-2'>
               <strong className='text-lg'>Cathub</strong>
               <span className='flex justify-between items-end'>
                 <p>Come join us in applauding the extraordinary cats who make our lives better and brighter, one purr at a time. </p>
                 <Link to='/cats' className='bg-neutral-300 text-neutral-800 font-extrabold py-2 px-4 rounded-md'>Visit</Link>
               </span>
               </div>
+            </div>
           </div>
         </ul>
         

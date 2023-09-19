@@ -190,20 +190,14 @@ input[type=number]::-webkit-inner-spin-button {
 .coffee-shop-background {
     background-image: url('https://img.freepik.com/premium-photo/cup-hot-coffee-latte-table-cafe-with-shallow-depth-field_258743-129.jpg');
     background-size: cover;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 1);
-    font-family: 'Pacifico', cursive;
 }
 .tea-shop-background {
     background-image: url('https://www.creativeboom.com/uploads/articles/43/43fc3ce660ae37335abc502fc033235ca239334f_810.jpg');
     background-size: cover;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 1);
-    font-family: 'Pacifico', cursive;
 }
 .cat-hub-background {
     background-image: url('https://i0.wp.com/thediscerningcat.com/wp-content/uploads/2021/03/numerous-cats-asleep-in-a-basket.jpg?fit=1200%2C800&amp;ssl=1');
     background-size: cover;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 1);
-    font-family: 'Pacifico', cursive;
 }
 .custom-shape-divider-top-1692912622 {
     position: absolute;
