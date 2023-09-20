@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { scrollToTop } from '../helpers/scrollToTop'
+import catHead from '../Frame 1 (15).png'
 function Home() {
   useEffect(() => {
     scrollToTop()
@@ -10,6 +11,7 @@ function Home() {
     <div className='bg-neutral-900 text-neutral-300'>
       <div className='w-full parallax' alt='cats in space'></div>
       <section className='px-4 text-xl md:text-lg relative'>
+        <img className='absolute -top-28 left-1/2 -translate-x-1/2' src={catHead} alt='cats head and ears'></img>
         <h1 className='text-4xl md:text-7xl text-center py-4'><strong>Coffee Cat</strong></h1>
         <div className=' max-w-xl mx-auto'>
         <p>Here at Coffee Cat our mission is simple:
