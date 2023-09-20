@@ -6,12 +6,13 @@ import Home from "./pages/Home";
 import Teas from "./pages/Teas";
 import Tea from "./pages/Tea";
 import NotFound from "./pages/NotFound";
-import catHead from './cathead.png'
+import catHead from './Frame 2.png'
 import ShoppingCart from "./components/ShoppingCart";
 import { useEffect, useState } from "react";
 import MobileMenu from "./components/MobileMenu";
 import Checkout from "./pages/Checkout";
 import cartLogo from './Frame 1 (11).png'
+import footerLogo from './Frame 2 (1).png'
 
 
 
@@ -30,8 +31,10 @@ function App() {
   return (
     <div className="relative">
     <nav className="nav flex fixed w-full items-center justify-between md:h-32 h-16 px-2 bg-neutral-800 text-neutral-300 z-40">
-        <h1 className="text-[2rem] md:text-[4rem]">CC</h1>
-        <img alt='cat head' className="absolute left-1/2 -translate-x-1/2 w-8 h-8 md:w-16 md:h-16" src={catHead}></img>
+        <div className="flex gap-2 items-center">
+        <h1 className="pacifico text-[2rem] md:text-[4rem]">CC</h1>
+        <img alt='cat head' className="w-8 h-8 md:w-16 md:h-16" src={catHead}></img>
+        </div>
       <div className="flex gap-2">
         <button className="flex justify-center items-center" onClick={() => {setMobileMenuActive(false); setShoppingCartActive(!shoppingCartActive); setShoppingCartShowing(true)}}>
         <img className="w-10 h-[2.15rem] md:w-20 md:h-[4.3rem]" src={cartLogo} alt='shopping cart'></img>
@@ -68,12 +71,13 @@ function App() {
       <Route path="/checkout" element={<Checkout setCartUpdated={setCartUpdated} cartUpdated={cartUpdated}/>}/>
       <Route path="*" element={<NotFound/>}/>
     </Routes>
-    <footer className="flex relative items-center justify-evenly px-2 bg-neutral-800 text-neutral-300">
+    <footer className="flex relative items-center justify-evenly px-2 py-4 bg-neutral-800 text-neutral-300">
+      <img src={footerLogo} alt='coffee cat logo' className="w-20 h-20"></img>
       <ul className="flex flex-col items-center">
-      <strong>Coffee Cat</strong>
+      <strong>Legal</strong>
       <Link to='/privacy'>Privacy Policy</Link>
       <Link to='/tou'>Terms Of Use</Link>
-      <Link to='/copyright'>Copyright & Legal</Link>
+      <Link to='/copyright'>Copyright</Link>
       </ul>
       <ul className="flex flex-col items-center">
       <strong>Contact</strong>
