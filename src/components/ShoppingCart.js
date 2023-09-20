@@ -14,7 +14,7 @@ function ShoppingCart({setShoppingCartActive, slide, cartUpdated}) {
   setTotalPrice(cartData.reduce((total, curVal) => total + (curVal.price * curVal.quantity), 0).toFixed(2))
   },[cartUpdated])
   return (
-    <div style={slide === 'left' ? {animation: 'slideLeft 1s ease forwards'} : {animation: 'slideRight 1s ease forwards'}} className='w-full h-full text-center p-2 md:w-2/5 z-20 fixed right-0 top-0 bg-neutral-900 text-neutral-300'>
+    <div style={slide === 'left' ? {animation: 'slideLeft 0.5s ease forwards'} : {animation: 'slideRight 0.5s ease forwards'}} className='w-full h-full text-center p-2 md:w-2/5 z-20 fixed right-0 top-0 bg-neutral-900 text-neutral-300'>
       <div className='h-16 md:h-32'></div>
       <strong className='text-2xl'>Shopping Cart</strong>
       <button onClick={() => setShoppingCartActive(false)}>
