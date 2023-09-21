@@ -25,7 +25,7 @@ function App() {
   const [cartUpdated, setCartUpdated] = useState(false)
   const [cartLength, setCartLength] = useState(0)
   useEffect(() => {
-    setCartLength(JSON.parse(localStorage.getItem('cart')).length)
+    setCartLength(JSON.parse(localStorage.getItem('cart'))?.length)
     setCartUpdated(false)
   },[cartUpdated])
   return (
