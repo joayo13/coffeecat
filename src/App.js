@@ -13,6 +13,11 @@ import MobileMenu from "./components/MobileMenu";
 import Checkout from "./pages/Checkout";
 import cartLogo from './Frame 1 (11).png'
 import footerLogo from './Frame 2 (1).png'
+import Cancel from "./pages/Cancel";
+import Success from "./pages/Success";
+import Privacy from "./pages/Privacy";
+import Tou from "./pages/Tou";
+import Copyright from "./pages/Copyright";
 
 
 
@@ -69,6 +74,11 @@ function App() {
       <Route path="/catalog/:id" element={<Tea setCartUpdated={setCartUpdated} cartUpdated={cartUpdated} setShoppingCartActive={setShoppingCartActive} setShoppingCartShowing={setShoppingCartShowing}/>}/>
       <Route path="/cats" element={<Cats/>}/>
       <Route path="/checkout" element={<Checkout setCartUpdated={setCartUpdated} cartUpdated={cartUpdated}/>}/>
+      <Route path="/cancel" element={<Cancel/>}/>
+      <Route path="/success" element={<Success/>}/>
+      <Route path="/privacy" element={<Privacy/>}/>
+      <Route path="/tou" element={<Tou/>}/>
+      <Route path="/copyright" element={<Copyright/>}/>
       <Route path="*" element={<NotFound/>}/>
     </Routes>
     <footer className="flex relative items-center justify-evenly px-2 py-4 bg-neutral-800 text-neutral-300">
