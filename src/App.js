@@ -36,10 +36,12 @@ function App() {
   return (
     <div className="relative">
     <nav className="nav flex fixed w-full items-center justify-between md:h-32 h-16 px-2 bg-neutral-800 text-neutral-300 z-40">
+        <Link to ='/'>
         <div className="flex gap-2 items-center">
         <h1 className="pacifico text-[2rem] md:text-[4rem]">CC</h1>
         <img alt='cat head' className="w-8 h-8 md:w-16 md:h-16" src={catHead}></img>
         </div>
+        </Link>
       <div className="flex gap-2">
         <button className="flex justify-center items-center" onClick={() => {setMobileMenuActive(false); setShoppingCartActive(!shoppingCartActive); setShoppingCartShowing(true)}}>
         <img className="w-10 h-[2.15rem] md:w-20 md:h-[4.3rem]" src={cartLogo} alt='shopping cart'></img>
