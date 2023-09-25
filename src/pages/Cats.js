@@ -7,7 +7,7 @@ function Cats() {
   },[])
   return (
     <div className='bg-neutral-900 text-neutral-300'>
-      <section className='flex flex-col w-full items-center py-2 px-2'>
+      <section className='flex flex-col w-full items-center py-2 px-4'>
         <strong className='text-3xl text-center pb-2 md:text-6xl max-w-lg'>Cat of the year- Mr. Poopy Boy</strong>
         <img className='md:max-w-lg py-2' alt='poo' src='https://www.onegreenplanet.org/wp-content/uploads/2014/07/m1lead.jpg'></img>
         <p className='max-w-lg py-2'>Incididunt Lorem laboris minim excepteur eiusmod mollit qui elit incididunt ad exercitation qui labore.
