@@ -33,9 +33,40 @@ function App() {
     setCartLength(JSON.parse(localStorage.getItem('cart'))?.length)
     setCartUpdated(false)
   },[cartUpdated])
+  const [scrollDir, setScrollDir] = useState("scrolling up");
+  
+  useEffect(() => {
+    const threshold = 0;
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+  
+    const updateScrollDir = () => {
+      const scrollY = window.scrollY;
+  
+      if (Math.abs(scrollY - lastScrollY) < threshold) {
+        ticking = false;
+        return;
+      }
+      setScrollDir(scrollY > lastScrollY ? "scrolling down" : "scrolling up");
+      lastScrollY = scrollY > 0 ? scrollY : 0;
+      ticking = false;
+    };
+  
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateScrollDir);
+        ticking = true;
+      }
+    };
+  
+    window.addEventListener("scroll", onScroll);
+    console.log(scrollDir);
+  
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [scrollDir]);
   return (
     <div className="relative">
-    <nav className="nav flex fixed w-full items-center justify-between md:h-32 h-16 px-2 bg-neutral-800 text-neutral-300 z-40">
+    <nav style={scrollDir === 'scrolling up' ? {animation: 'slideDown 200ms ease forwards'} : {animation: 'slideUp 200ms ease forwards'}} className="nav flex fixed w-full items-center justify-between md:h-32 h-16 px-2 bg-neutral-800 text-neutral-300 z-40">
         <Link to ='/'>
         <div className="flex gap-2 items-center">
         <h1 className="pacifico text-[2rem] md:text-[4rem]">CC</h1>
