@@ -6,6 +6,9 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: #171717;
 }
+body:has(.requires-no-scroll) {
+  overflow: hidden;
+}
 .nav {
     box-shadow: 0 1px 3px rgba(0,0,0,.1),0 2px 2px rgba(0,0,0,.06),0 0 2px rgba(0,0,0,.07);
 }

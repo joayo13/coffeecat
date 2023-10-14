@@ -98,10 +98,10 @@ function App() {
       </div>
     </nav>
     {shoppingCartShowing ? <>
-      {shoppingCartActive ? <ShoppingCart setShoppingCartActive={setShoppingCartActive} slide={'left'} cartUpdated={cartUpdated}/> : <ShoppingCart slide={'right'} setShoppingCartActive={setShoppingCartActive}/>}
+      {shoppingCartActive ? <ShoppingCart shoppingCartActive={shoppingCartActive} setShoppingCartActive={setShoppingCartActive} slide={'left'} cartUpdated={cartUpdated}/> : <ShoppingCart slide={'right'} setShoppingCartActive={setShoppingCartActive}/>}
       </> : null}
       {mobileMenuShowing ? <>
-      {mobileMenuActive ? <MobileMenu slide={'left'} setMobileMenuActive={setMobileMenuActive}/> : <MobileMenu slide={'right'} setMobileMenuActive={setMobileMenuActive}/>}
+      {mobileMenuActive ? <MobileMenu mobileMenuActive={mobileMenuActive} slide={'left'} setMobileMenuActive={setMobileMenuActive}/> : <MobileMenu slide={'right'} setMobileMenuActive={setMobileMenuActive}/>}
       </> : null}
     <div className="md:h-32 h-16"></div>
     <Routes>

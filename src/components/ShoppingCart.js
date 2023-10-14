@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import CartItem from './CartItem'
 
-function ShoppingCart({setShoppingCartActive, slide, cartUpdated}) {
+function ShoppingCart({shoppingCartActive, setShoppingCartActive, slide, cartUpdated}) {
   const [cart, setCart] = useState([])
   const [totalPrice, setTotalPrice] = useState(0)
   useEffect(() => {
@@ -14,6 +14,7 @@ function ShoppingCart({setShoppingCartActive, slide, cartUpdated}) {
   setTotalPrice(cartData.reduce((total, curVal) => total + (curVal.price * curVal.quantity), 0).toFixed(2))
   },[cartUpdated])
   return (
+    <div className={shoppingCartActive ? 'requires-no-scroll' : null}>
     <div style={slide === 'left' ? {animation: 'slideLeft 0.5s ease forwards'} : {animation: 'slideRight 0.5s ease forwards'}} className='w-full h-full text-center p-2 md:w-2/5 z-20 fixed right-0 top-0 bg-neutral-900 text-neutral-300'>
       <div className='h-16 md:h-32'></div>
       <strong className='text-2xl'>Shopping Cart</strong>
@@ -26,6 +27,7 @@ function ShoppingCart({setShoppingCartActive, slide, cartUpdated}) {
       <div className='absolute bottom-2 w-full flex justify-center'>
       <Link onClick={() => setShoppingCartActive(false)} to="/checkout" className='bg-neutral-300 text-neutral-800 font-extrabold py-2 px-4 rounded-full'>Checkout ({totalPrice})</Link>
       </div>
+    </div>
     </div>
   )
 }
