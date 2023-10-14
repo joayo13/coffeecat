@@ -50,7 +50,7 @@ function Home() {
           <h4 className='text-sm'>Toronto, Ontario</h4>
           <div className='flex md:flex-col gap-2 md:gap-0 items-center'>
             <img 
-              src='https://www.catster.com/wp-content/uploads/2018/06/Cat-screaming-mouth-open-making-noise.jpg.optimal.jpg'
+              src='https://www.acomaanimalclinictucson.com/wp-content/uploads/2020/06/AdobeStock_201916447-scaled.jpeg'
               alt='bart the cat from detroit'
               className='object-cover rounded-full h-12 w-12 md:h-24 md:w-24'>
             </img>

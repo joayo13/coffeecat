@@ -6,7 +6,7 @@ const teaItems = {
       category: 'merch',
       quantity: 1,
       id: 2,
-      desc: 'Velit nostrud id aliquip ipsum proident et laborum aliqua ut proident cillum anim dolor. Sit nisi veniam eiusmod laborum veniam nostrud consequat consequat labore. Labore aute ut nulla reprehenderit culpa consequat adipisicing Lorem. Ut qui pariatur qui voluptate non est ex minim laborum pariatur consequat. Incididunt duis aliqua aliqua labore. Fugiat excepteur veniam tempor est nostrud Lorem elit consectetur minim magna. Excepteur quis elit pariatur sit voluptate sint duis labore sunt sint.'
+      desc: `Elevate your morning coffee or tea routine to a state of serene bliss with the Peaceful Cat Mug, a charming creation by the artist Brucie Rosch. This delightful ceramic masterpiece combines the grace and tranquility of a cat with the functional elegance of a quality mug, making it the perfect companion for those seeking both style and serenity in their daily sips.`
     },
     1: {
       title: 'Cranky Cat By Brucie Rosch',
@@ -15,7 +15,7 @@ const teaItems = {
       category: 'merch',
       quantity: 1,
       id: 2,
-      desc: 'Cillum amet consectetur et dolore magna dolor exercitation. Et elit aute quis et eu duis fugiat qui ea incididunt veniam mollit aute. Aute esse nulla aute ex consequat ad laborum amet sint exercitation deserunt. Ex reprehenderit sint mollit cillum dolore anim dolore. Dolor esse nulla cillum consequat labore culpa proident occaecat adipisicing duis.'
+      desc: `Embrace your inner feline spirit with the Cranky Cat Mug, an imaginative creation by the talented artist Brucie Rosch. This charming ceramic masterpiece perfectly captures the quirky and endearing essence of our feline friends, adding a dash of humor and delight to your morning ritual.`
     },  
     2: {
       title: 'Cat Wants Coffee By Brucie Rosch',
@@ -24,7 +24,7 @@ const teaItems = {
       category: 'merch',
       quantity: 1,
       id: 2,
-      desc: 'Qui amet elit dolore elit consequat. Ullamco do laboris nisi id qui ullamco culpa pariatur amet id commodo consequat adipisicing duis. Sunt eiusmod dolor id laboris sint deserunt ipsum anim exercitation ipsum. Consectetur adipisicing ea dolor qui. Cupidatat eiusmod officia laboris proident nulla do quis.'
+      desc: `Start your day with a playful twist and a touch of feline charm, courtesy of the 'Cat Wants Coffee' Mug, an artistic masterpiece by the talented Brucie Rosch. This delightful ceramic mug combines the whimsy of our feline companions with the joy of your favorite brew, creating a unique and expressive experience with every sip.`
     },  
     3: {
       title: 'Cat and Alien By Brucie Rosch',
@@ -33,7 +33,7 @@ const teaItems = {
       category: 'merch',
       quantity: 1,
       id: 2,
-      desc: 'Voluptate dolor magna cupidatat Lorem qui. Magna non proident sint excepteur nisi cillum nulla. Ipsum culpa commodo eu nisi ullamco adipisicing cillum elit.'
+      desc: 'Get ready to embark on a whimsical journey to outer space with the Cat and Alien Mug, a delightful creation by the imaginative artist Brucie Rosch. This ceramic masterpiece combines the playful curiosity of a feline friend and the enigmatic allure of an alien encounter, creating a one-of-a-kind and otherworldly experience with every sip.'
     },  
     4: {
       title: 'Dark Matter Yin-Yang Sweater',
@@ -42,7 +42,7 @@ const teaItems = {
       category: 'merch',
       quantity: 1,
       id: 3,
-      desc: 'Eiusmod aliqua aliquip consectetur nulla dolore. Esse in quis esse nulla. Culpa elit ad ut et culpa dolore id non cillum mollit adipisicing magna qui dolore. Duis cillum nisi exercitation fugiat. Duis nulla Lorem elit cillum cillum velit fugiat Lorem minim labore magna duis aliqua ut. Ad consequat excepteur ad officia ea ut proident dolore excepteur ipsum est et. Tempor mollit ex Lorem proident aute.'
+      desc: `Wrap yourself in an aura of feline grace and cosmic balance with the Dark Matter Yin-Yang Cat Sweater. This enchanting garment combines the timeless allure of yin and yang with the captivating charm of cats, creating a wearable masterpiece that exudes style, harmony, and a touch of cosmic mystery.`
     },  
     5: {
       title: 'Kitty Town Coffee Baseball Cap',
@@ -51,7 +51,7 @@ const teaItems = {
       category: 'merch',
       quantity: 1,
       id: 4,
-      desc: 'Duis anim consequat anim reprehenderit consectetur eu id ullamco sunt deserunt quis ut. Minim non eu est labore aliquip elit reprehenderit excepteur consequat reprehenderit non pariatur. Pariatur consequat pariatur irure ullamco ut cupidatat proident laborum do dolore mollit mollit. Amet anim in labore irure cupidatat in adipisicing enim mollit nisi mollit. Est nisi ad enim cillum incididunt laboris dolor in excepteur nulla Lorem ullamco. Labore adipisicing in pariatur ut duis duis. Exercitation incididunt reprehenderit consequat non eu.'
+      desc: `Complete your daily look with the Kitty Town Coffee Baseball Cap - a versatile and stylish accessory that embodies the spirit of your favorite coffee brand. This cap isn't just a fashion statement; it's a symbol of your love for quality coffee and a commitment to feline companionship.`
 
     },  
     

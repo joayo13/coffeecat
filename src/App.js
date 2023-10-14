@@ -42,13 +42,18 @@ function App() {
         <img alt='cat head' className="w-8 h-8 md:w-16 md:h-16" src={catHead}></img>
         </div>
         </Link>
+        <div className="absolute hidden font-bold md:flex gap-8 top-1/2 -translate-y-1/2 text-3xl left-1/2 -translate-x-1/2">
+          <Link to='/coffees'>Cat Café</Link>
+          <Link to='/catalog'>The Catalog</Link>
+          <Link to='/cats'>Cathub</Link>
+        </div>
       <div className="flex gap-2">
         <button className="flex justify-center items-center" onClick={() => {setMobileMenuActive(false); setShoppingCartActive(!shoppingCartActive); setShoppingCartShowing(true)}}>
         <img className="w-10 h-[2.15rem] md:w-20 md:h-[4.3rem]" src={cartLogo} alt='shopping cart'></img>
         <strong className="absolute">{cartLength}</strong>
         </button>
         <button onClick={() => {setShoppingCartActive(false); setMobileMenuActive(!mobileMenuActive); setMobileMenuShowing(true)}}>
-        <div className="hb w-8 h-8 md:w-16 md:h-16">
+        <div className="hb w-8 h-8 md:w-16 md:h-16 md:hidden">
           {mobileMenuShowing ? 
           <><div style={ mobileMenuActive ? {animation: 'hb1 0.3s linear forwards'} : {animation: 'hb1r 0.3s linear forwards'}} className="hb1"></div>
           <div style={ mobileMenuActive ? {animation: 'hb2 0.15s linear forwards'} : {animation: 'hb2r 0.15s linear forwards'}} className="hb2"></div>
