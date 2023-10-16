@@ -5,6 +5,7 @@ import { scrollToTop } from '../helpers/scrollToTop'
 function Checkout({cartUpdated, setCartUpdated}) {
   const [cart, setCart] = useState([])
   const [totalPrice, setTotalPrice] = useState(0)
+  const [readMore, setReadMore] = useState(false)
   useEffect(() => {
     scrollToTop()
   },[])
@@ -53,6 +54,9 @@ function Checkout({cartUpdated, setCartUpdated}) {
             and our checkout process is no exception. With Stripe's cutting-edge payment technology, you can shop with confidence,
              knowing your sensitive information is protected every step of the way.
         </p>
+        {!readMore ? <button className='text-indigo-500' onClick={() => setReadMore(true)}>Read More</button> : null}
+        { readMore ?
+          <div>
         <strong className='text-xl'>Key features:</strong>
         <ul>
           <li><strong>Robust Security:</strong> Stripe employs industry-leading security measures to safeguard your payment information. Our checkout process is fully compliant with Payment Card Industry Data Security Standard (PCI DSS) requirements, ensuring your data is protected from potential threats.</li>
@@ -64,6 +68,9 @@ function Checkout({cartUpdated, setCartUpdated}) {
           <li><strong>Transparent Pricing:</strong> Rest easy knowing that you won't encounter hidden fees or unexpected charges. Stripe offers transparent pricing, so you know exactly what you're paying for.</li>
           <li><strong>Customer Support:</strong> Should you have any questions or encounter any issues during the checkout process, our dedicated customer support team is here to assist you promptly.</li>
         </ul>
+        </div>
+        : null
+      }
       </section>
     </div>
   )
