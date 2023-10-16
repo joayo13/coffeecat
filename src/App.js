@@ -66,7 +66,7 @@ function App() {
   }, [scrollDir]);
   return (
     <div className="relative">
-    <nav style={scrollDir === 'scrolling up' ? {animation: 'slideDown 200ms ease forwards'} : {animation: 'slideUp 200ms ease forwards'}} className="nav flex fixed w-full items-center justify-between md:h-32 h-16 px-2 bg-neutral-800 text-neutral-300 z-40">
+    <nav style={scrollDir === 'scrolling up' ? {animation: 'slideDown 200ms ease forwards'} : {animation: 'slideUp 200ms ease forwards'}} className="nav flex fixed w-full items-center justify-between md:h-32 h-16 px-2 bg-neutral-900 text-neutral-300 z-40">
         <Link to ='/'>
         <div className="flex gap-2 items-center">
         <h1 className="pacifico text-[2rem] md:text-[4rem]">CC</h1>
