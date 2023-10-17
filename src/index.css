@@ -243,13 +243,12 @@ input[type=number]::-webkit-inner-spin-button {
 .parallax {
     /* The image used */
   background-image: url("./catsinspace.jpg");
-
   /* Set a specific height */
-  min-height: 50vh; 
+  min-height: 60vh; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }

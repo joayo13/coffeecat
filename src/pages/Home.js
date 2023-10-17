@@ -9,7 +9,7 @@ function Home() {
 
   return (
     <div className='bg-neutral-900 text-neutral-300'>
-      <div className='w-full parallax' alt='cats in space'></div>
+      <div className='w-full parallax' alt='cat in shopwindow'></div>
       <section className='px-4 text-xl md:text-lg relative'>
         <img className='absolute -top-28 left-1/2 -translate-x-1/2' src={catHead} alt='cats head and ears'></img>
         <h1 className='text-4xl md:text-7xl text-center py-4'><strong>Coffee Cat</strong></h1>

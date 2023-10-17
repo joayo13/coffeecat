@@ -8,7 +8,7 @@ function Copyright() {
   return (
     <div className='text-neutral-300 h-screen px-4'>
       <ul className='max-w-xl mx-auto'>
-      <strong className='text-3xl md:text-6xl block py-2'>Copyright Notice</strong>
+      <strong className='text-3xl md:text-6xl block py-4'>Copyright Notice</strong>
 
 Last Updated: 2023-09-21
 <br></br>

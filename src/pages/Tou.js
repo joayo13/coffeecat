@@ -8,7 +8,7 @@ function Tou() {
   return (
     <div className='text-neutral-300 h-screen px-4'>
       <ul className='max-w-xl mx-auto'>
-      <strong className='text-3xl md:text-6xl block py-2'>Terms Of Use</strong>
+      <strong className='text-3xl md:text-6xl block py-4'>Terms Of Use</strong>
 1. Acceptance of Terms: 
 
 By using CoffeeCat, you agree to abide by these simple terms:
