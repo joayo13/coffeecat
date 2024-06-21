@@ -12,12 +12,11 @@ function Home() {
       <div className='w-full parallax' alt='cat in shopwindow'></div>
       <section className='px-4 text-xl md:text-lg relative'>
         <img className='absolute -top-28 left-1/2 -translate-x-1/2' src={catHead} alt='cats head and ears'></img>
-        <h1 className='text-4xl md:text-7xl text-center py-4'><strong>Coffee Cat</strong></h1>
-        <div className=' max-w-xl mx-auto'>
-        <p>Here at Coffee Cat our mission is simple:
-        <strong> Take over all of humanity and replace humans with AI-enhanced cat cyborgs.</strong></p>
-        <p>In all seriousness, our team of experts have searched the globe for the best cat-themed coffees and merch and put them all right here for your convenience. 
-          Don't believe us? Well take a look at some of our non-paid-off customer reviews and you might just think twice.</p>
+        <h1 className='text-4xl md:text-7xl text-center py-8 font-bold'>Coffee with a Purpose</h1>
+        <div className=' max-w-3xl mx-auto text-2xl'>
+        <p>Here at CoffeeCat our mission is simple:</p>
+        
+        <p>Make affordable great-tasting coffee that helps out cats in need. 50% of all our profit goes back to cat charities near you.</p>
         </div>
       </section>
       <h2 className='text-4xl md:text-7xl text-center py-4 pacifico'>Customer Reviews</h2>

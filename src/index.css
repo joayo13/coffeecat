@@ -242,7 +242,8 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .parallax {
     /* The image used */
-  background-image: url("./catsinspace.jpg");
+  /* background-image: url("./catsinspace.jpg"); */
+  background-color: black;
   /* Set a specific height */
   min-height: 60vh; 
 

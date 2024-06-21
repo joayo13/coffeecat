@@ -66,14 +66,14 @@ function App() {
   }, [scrollDir]);
   return (
     <div className="relative">
-    <nav style={scrollDir === 'scrolling up' ? {animation: 'slideDown 200ms ease forwards'} : {animation: 'slideUp 200ms ease forwards'}} className="nav flex fixed w-full items-center justify-between md:h-32 h-16 px-2 bg-neutral-900 text-neutral-300 z-40">
+    <nav style={scrollDir === 'scrolling up' ? {animation: 'slideDown 200ms ease forwards'} : {animation: 'slideUp 200ms ease forwards'}} className="nav flex fixed w-full items-center justify-between h-16 px-2 bg-neutral-900 text-neutral-300 z-40">
         <Link to ='/'>
         <div className="flex gap-2 items-center">
-        <h1 className="pacifico text-[2rem] md:text-[4rem]">CC</h1>
-        <img alt='cat head' className="w-8 h-8 md:w-16 md:h-16" src={catHead}></img>
+        <img alt='cat head' className="h-12 w-12" src={catHead}></img>
+        <p className="pacifico">CoffeeCat</p>
         </div>
         </Link>
-        <div className="absolute hidden font-bold md:flex gap-8 top-1/2 -translate-y-1/2 text-3xl left-1/2 -translate-x-1/2">
+        <div className="absolute hidden font-bold md:flex gap-8 top-1/2 -translate-y-1/2 text-xl left-1/2 -translate-x-1/2">
           <Link to='/coffees'>Cat Café</Link>
           <Link to='/catalog'>The Catalog</Link>
           <Link to='/cats'>Cathub</Link>
