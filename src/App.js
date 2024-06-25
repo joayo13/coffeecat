@@ -66,7 +66,7 @@ function App() {
   }, [scrollDir]);
   return (
     <div className="relative">
-    <nav style={scrollDir === 'scrolling up' ? {animation: 'slideDown 200ms ease forwards'} : {animation: 'slideUp 200ms ease forwards'}} className="nav flex fixed w-full items-center justify-between h-16 px-2 bg-neutral-900 text-neutral-300 z-40">
+    <nav style={scrollDir === 'scrolling up' ? {animation: 'slideDown 200ms ease forwards'} : {animation: 'slideUp 200ms ease forwards'}} className="nav flex fixed w-full items-center justify-between h-16 px-2 bg-neutral-950 text-neutral-300 z-40">
         <Link to ='/'>
         <div className="flex gap-2 items-center">
         <img alt='cat head' className="h-12 w-12" src={catHead}></img>
@@ -83,7 +83,7 @@ function App() {
         <img className="w-10 h-[2.15rem] md:w-20 md:h-[4.3rem]" src={cartLogo} alt='shopping cart'></img>
         <strong className="absolute">{cartLength}</strong>
         </button>
-        <button onClick={() => {setShoppingCartActive(false); setMobileMenuActive(!mobileMenuActive); setMobileMenuShowing(true)}}>
+        {/* <button onClick={() => {setShoppingCartActive(false); setMobileMenuActive(!mobileMenuActive); setMobileMenuShowing(true)}}>
         <div className="hb w-8 h-8 md:w-16 md:h-16 md:hidden">
           {mobileMenuShowing ? 
           <><div style={ mobileMenuActive ? {animation: 'hb1 0.3s linear forwards'} : {animation: 'hb1r 0.3s linear forwards'}} className="hb1"></div>
@@ -94,7 +94,17 @@ function App() {
           <div className="hb3"></div></>}
           
         </div>
-        </button>
+        </button> */}
+        <button
+					className={`hamburger hamburger--collapse ${mobileMenuActive ? 'is-active' : ''}`}
+					onClick={() => {setShoppingCartActive(false); setMobileMenuActive(!mobileMenuActive); setMobileMenuShowing(true)}}
+					aria-expanded={mobileMenuActive ? 'true' : 'false'}
+					aria-controls="mobile-menu"
+				>
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
       </div>
     </nav>
     {shoppingCartShowing ? <>
@@ -103,7 +113,6 @@ function App() {
       {mobileMenuShowing ? <>
       {mobileMenuActive ? <MobileMenu mobileMenuActive={mobileMenuActive} slide={'left'} setMobileMenuActive={setMobileMenuActive}/> : <MobileMenu slide={'right'} setMobileMenuActive={setMobileMenuActive}/>}
       </> : null}
-    <div className="md:h-32 h-16"></div>
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/coffees" element={<Coffees/>}/>
@@ -119,7 +128,7 @@ function App() {
       <Route path="/copyright" element={<Copyright/>}/>
       <Route path="*" element={<NotFound/>}/>
     </Routes>
-    <footer className="flex relative items-center justify-evenly px-2 py-4 bg-neutral-800 text-neutral-300">
+    <footer className="flex relative items-center justify-evenly px-2 py-4 bg-neutral-950 text-neutral-300">
       <img src={footerLogo} alt='coffee cat logo' className="w-20 h-20"></img>
       <ul className="flex flex-col items-center">
       <strong>Legal</strong>

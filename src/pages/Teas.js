@@ -8,7 +8,7 @@ function Teas() {
     scrollToTop()
   },[])
   return (
-    <div className='bg-neutral-900 text-neutral-300'>
+    <div className='bg-neutral-900 text-neutral-300 pt-16'>
       <section className='text-center flex flex-col items-center'>
       <strong className='text-6xl py-2'>The Catalog</strong>
       <h3>All Products</h3>

@@ -8,7 +8,7 @@ function Home() {
   },[])
 
   return (
-    <div className='bg-neutral-900 text-neutral-300'>
+    <div className='bg-neutral-900 text-neutral-300 pt-16'>
       <div className='w-full parallax' alt='cat in shopwindow'></div>
       <section className='px-4 text-xl md:text-lg relative'>
         <img className='absolute -top-28 left-1/2 -translate-x-1/2' src={catHead} alt='cats head and ears'></img>

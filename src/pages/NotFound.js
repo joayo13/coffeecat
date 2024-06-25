@@ -7,7 +7,7 @@ function NotFound() {
     scrollToTop()
   },[])
   return (
-    <div className='text-neutral-300 text-center h-screen'>
+    <div className='text-neutral-300 text-center h-screen pt-16'>
       <strong className='text-3xl md:text-6xl'>Oops! This Page does not exist.</strong>
       <Link className='underline block py-4' to="/">Return To Home</Link>
     </div>

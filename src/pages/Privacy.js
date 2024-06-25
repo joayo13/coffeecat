@@ -6,7 +6,7 @@ function Privacy() {
         scrollToTop()
       },[])
   return (
-    <div className='text-neutral-300 px-4'>
+    <div className='text-neutral-300 px-4 pt-16'>
       
       <ul className='max-w-xl mx-auto py-4'>
       <strong className='text-3xl md:text-6xl block py-4'>Privacy Policy</strong>

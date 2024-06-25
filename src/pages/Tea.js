@@ -20,7 +20,7 @@ function Tea({setCartUpdated, cartUpdated, setShoppingCartActive, setShoppingCar
     }
   }
   return (
-    <div className='bg-neutral-900 text-neutral-300'>
+    <div className='bg-neutral-900 text-neutral-300 pt-16'>
       <section className='flex flex-col w-full items-center py-2 px-4'>
         <strong className='text-3xl pb-2 md:text-6xl max-w-lg text-center'>{teaItems[item.id].title}</strong>
         <img className='md:max-w-lg' alt={teaItems[item.id].title} src={teaItems[item.id].image}></img>
