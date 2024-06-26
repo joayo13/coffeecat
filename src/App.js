@@ -6,13 +6,12 @@ import Home from "./pages/Home";
 import Teas from "./pages/Teas";
 import Tea from "./pages/Tea";
 import NotFound from "./pages/NotFound";
-import catHead from './Frame 2.png'
+import catMug from './images/catMug.png'
 import ShoppingCart from "./components/ShoppingCart";
 import { useEffect, useState } from "react";
 import MobileMenu from "./components/MobileMenu";
 import Checkout from "./pages/Checkout";
-import cartLogo from './Frame 1 (11).png'
-import footerLogo from './Frame 2 (1).png'
+import footerLogo from './images/catMug2.png'
 import Cancel from "./pages/Cancel";
 import Success from "./pages/Success";
 import Privacy from "./pages/Privacy";
@@ -69,7 +68,7 @@ function App() {
     <nav style={scrollDir === 'scrolling up' ? {animation: 'slideDown 200ms ease forwards'} : {animation: 'slideUp 200ms ease forwards'}} className="nav flex fixed w-full items-center justify-between h-16 px-2 bg-neutral-950 text-neutral-300 z-40">
         <Link to ='/'>
         <div className="flex gap-2 items-center">
-        <img alt='cat head' className="h-12 w-12" src={catHead}></img>
+        <img alt='cat head' className="h-12 w-12" src={catMug}></img>
         <p className="pacifico">CoffeeCat</p>
         </div>
         </Link>

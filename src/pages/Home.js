@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { scrollToTop } from '../helpers/scrollToTop'
-import catHead from '../Frame 1 (15).png'
+import catHead from '../images/catHead.png'
 function Home() {
   useEffect(() => {
     scrollToTop()
