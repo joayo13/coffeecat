@@ -75,7 +75,7 @@ function App() {
         <div className="absolute hidden md:flex gap-8 top-1/2 -translate-y-1/2 text-xl left-1/2 -translate-x-1/2 underline">
           <Link to='/coffees'>Cat Café</Link>
           <Link to='/catalog'>The Catalog</Link>
-          <Link to='/cats'>Cathub</Link>
+          <Link to='/cats'>Top Cats</Link>
         </div>
       <div className="flex gap-2">
         <button className="flex justify-center items-center" onClick={() => {setMobileMenuActive(false); setShoppingCartActive(!shoppingCartActive); setShoppingCartShowing(true)}}>

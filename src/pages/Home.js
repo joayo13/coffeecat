@@ -2,6 +2,9 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { scrollToTop } from '../helpers/scrollToTop'
 import catHead from '../images/catHead.png'
+import sirThomas from '../images/sir-thomas.jpg'
+import peter from '../images/peter.jpg'
+import bart from '../images/bart.jpg'
 function Home() {
   useEffect(() => {
     scrollToTop()
@@ -22,24 +25,24 @@ function Home() {
       <h2 className='text-4xl md:text-7xl text-center py-4 pacifico'>Customer Reviews</h2>
       <ul className='px-2 w-full flex flex-col md:flex-row gap-2 text-xl md:text-center md:text-3xl md:justify-evenly'>
         <li className='flex flex-col flex-1 md:items-center gap-2 py-4 px-4 bg-gradient-to-b from-yellow-900 to-neutral-900 rounded-lg'>
-          <h3>John</h3>
-          <h4 className='text-sm'>Iowa City, Iowa</h4>
+          <h3>Peter</h3>
+          <h4 className='text-sm'>Amsterdam, Netherlands</h4>
           <div className='flex md:flex-col gap-2 md:gap-0 items-center'>
             <img 
-              src='https://media.istockphoto.com/id/926092800/photo/portrait-of-a-scottish-straight-cat-with-glasses.jpg?s=612x612&w=0&k=20&c=MvWk4Noy1P27CwNh2UVHoFQ-yuKsFn92PZN8vOz8GCE='
-              alt='john the cat from iowa'
+              src={peter}
+              alt='peter the cat from amsterdam'
               className='rounded-full h-12 w-12 md:h-24 md:w-24 object-cover'>
             </img>
             <strong>"Yeah probably the best coffee I've ever tasted hands down."</strong>
           </div>
         </li>
         <li className='flex flex-col flex-1 md:items-center gap-2 py-4 px-4 bg-gradient-to-b from-yellow-900 to-neutral-900 rounded-lg'>
-          <h3>Billy</h3>
-          <h4 className='text-sm'>Detroit, Michigan</h4>
+          <h3>Sir Thomas</h3>
+          <h4 className='text-sm'>London, England</h4>
           <div className='flex md:flex-col gap-2 md:gap-0 items-center'>
             <img 
-              src='https://www.onegreenplanet.org/wp-content/uploads/2014/07/m1lead.jpg'
-              alt='billy the cat from toronto'
+              src={sirThomas}
+              alt='sir thomas the cat from toronto'
               className='rounded-full h-12 w-12 md:h-24 md:w-24 object-cover'></img>
             <strong>"I liked the mugs."</strong>
           </div>
@@ -49,11 +52,11 @@ function Home() {
           <h4 className='text-sm'>Toronto, Ontario</h4>
           <div className='flex md:flex-col gap-2 md:gap-0 items-center'>
             <img 
-              src='https://www.acomaanimalclinictucson.com/wp-content/uploads/2020/06/AdobeStock_201916447-scaled.jpeg'
+              src={bart}
               alt='bart the cat from detroit'
               className='object-cover rounded-full h-12 w-12 md:h-24 md:w-24'>
             </img>
-            <strong>"$%^&# *&^Y$# &*$!!!!!!"</strong>
+            <strong>"F&#K Y&* M*%#ERF*KR!!!!!"</strong>
           </div>
         </li>
       </ul>
@@ -90,7 +93,7 @@ function Home() {
           <div className='w-full'>
             <div className='cat-hub-background relative h-48 md:h-96 w-full rounded-md overflow-hidden'>
             <div className='bg-black bg-opacity-80 absolute bottom-0 rounded-b-md text-base p-2'>
-              <strong className='text-lg'>Cathub</strong>
+              <strong className='text-lg'>Top Cats</strong>
               <span className='flex justify-between items-end'>
                 <p>Come join us in applauding the extraordinary cats who make our lives better and brighter, one purr at a time. </p>
                 <Link to='/cats' className='bg-neutral-300 text-neutral-800 font-extrabold py-2 px-4 rounded-md'>Visit</Link>
