@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { scrollToTop } from '../helpers/scrollToTop'
-import catHead from '../images/catHead.png'
+import catHeadWithFace from '../images/catHeadWithFace.png'
 import sirThomas from '../images/sir-thomas.jpg'
 import peter from '../images/peter.jpg'
 import bart from '../images/bart.jpg'
@@ -14,12 +14,13 @@ function Home() {
     <div className='bg-neutral-900 text-neutral-300 pt-16'>
       <div className='w-full parallax' alt='cat in shopwindow'></div>
       <section className='px-4 text-xl md:text-lg relative'>
-        <img className='absolute -top-28 left-1/2 -translate-x-1/2' src={catHead} alt='cats head and ears'></img>
-        <h1 className='text-4xl md:text-7xl text-center py-8 font-bold'>Coffee with a Purpose</h1>
-        <div className=' max-w-3xl mx-auto text-2xl'>
-        <p>Here at CoffeeCat our mission is simple:</p>
-        
-        <p>Make affordable great-tasting coffee that helps out cats in need. 50% of all our profit goes back to cat charities near you.</p>
+        <img className='absolute -top-28 left-1/2 -translate-x-1/2' src={catHeadWithFace} alt='cats head'></img>
+        <h1 className='text-4xl md:text-7xl text-center py-8 font-bold'>Coffee with a Purrpose</h1>
+        <div className=' max-w-3xl mx-auto'>
+        <p>We believe in combining our love for exceptional coffee with our passion for helping our feline friends.
+            For every purchase made, a portion of the proceeds is donated to local cat shelters. Our mission is to support the well-being of cats in need,
+             ensuring they receive the care, love, and shelter they deserve. Join us in making a positive impact, one cup at a time.
+              Enjoy your coffee, and feel good knowing you're helping to create a better world for cats everywhere.</p>
         </div>
       </section>
       <h2 className='text-4xl md:text-7xl text-center py-4 pacifico'>Customer Reviews</h2>

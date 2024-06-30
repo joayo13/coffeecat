@@ -65,7 +65,7 @@ function App() {
   }, [scrollDir]);
   return (
     <div className="relative">
-    <nav style={scrollDir === 'scrolling up' ? {animation: 'slideDown 200ms ease forwards'} : {animation: 'slideUp 200ms ease forwards'}} className="nav flex fixed w-full items-center justify-between h-16 px-2 bg-neutral-950 text-neutral-300 z-40">
+    <nav style={scrollDir === 'scrolling up' ? {animation: 'slideDown 200ms ease forwards'} : {animation: 'slideUp 200ms ease forwards'}} className="navbar nav flex fixed w-full items-center justify-between h-16 px-2 bg-neutral-950 text-neutral-300 z-40">
         <Link to ='/'>
         <div className="flex gap-2 items-center">
         <img alt='cat head' className="h-12 w-12" src={catMug}></img>
