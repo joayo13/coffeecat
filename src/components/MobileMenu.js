@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom'
 function MobileMenu({mobileMenuActive, setMobileMenuActive, slide}) {
   return (
     <div className={mobileMenuActive ? 'requires-no-scroll' : null}>
-    <div style={slide === 'left' ? {animation: 'slideLeft 0.3s cubic-bezier(.38,.59,.78,.96) forwards'} : {animation: 'slideRight 0.3s cubic-bezier(.38,.59,.78,.96) forwards'}} className='w-full text-center p-2 md:w-2/5 z-10 fixed right-0 top-0 h-full bg-neutral-900 text-neutral-300'>
-        <div className='h-16 md:h-32'></div>
-        <div className='w-full h-[80%] flex flex-col gap-10 items-center justify-center font-extrabold text-4xl'>
-          <Link onClick={() => setMobileMenuActive(false)} to='/'>Home</Link>
-          <Link onClick={() => setMobileMenuActive(false)} to='/coffees'>Coffee Shop</Link>
-          <Link onClick={() => setMobileMenuActive(false)} to='/catalog'>The Catalog</Link>
-          <Link onClick={() => setMobileMenuActive(false)} to='/cats'>Cathub</Link>
+    <div style={slide === 'left' ? {animation: 'slideLeft 0.3s cubic-bezier(.38,.59,.78,.96) forwards'} : {animation: 'slideRight 0.3s cubic-bezier(.38,.59,.78,.96) forwards'}} className='w-80 text-center p-2 z-10 fixed right-0 top-0 h-full bg-neutral-900 text-neutral-300'>
+        <div className=' pt-16 w-full h-[80%] flex flex-col gap-8 items-start justify-start font-extrabold text-2xl'>
+          <div className='flex gap-2 items-center'><span className='material-icons'>home</span><Link className='underline' onClick={() => setMobileMenuActive(false)} to='/'>Home</Link></div>
+          
+          <div className='flex gap-2 items-center'><span className='material-icons'>local_cafe</span><Link className='underline' onClick={() => setMobileMenuActive(false)} to='/coffees'>Coffee Shop</Link></div>
+          <div className='flex gap-2 items-center'><span className='material-icons'>shopping_basket</span><Link className='underline' onClick={() => setMobileMenuActive(false)} to='/catalog'>The Catalog</Link></div>
+          <div className='flex gap-2 items-center'><span className='material-icons'>star</span><Link className='underline' onClick={() => setMobileMenuActive(false)} to='/cats'>Top Cats</Link></div>
         </div>
     </div>
     </div>
