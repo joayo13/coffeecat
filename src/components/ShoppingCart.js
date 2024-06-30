@@ -3,6 +3,18 @@ import { Link } from 'react-router-dom'
 import CartItem from './CartItem'
 
 function ShoppingCart({shoppingCartActive, setShoppingCartActive, slide, cartUpdated}) {
+  useEffect(() => {
+    const body = document.body;
+    if (shoppingCartActive) {
+      body.style.position = 'fixed';
+      body.style.width = '100%';
+      body.style.overflowY = 'scroll';
+    } else {
+      body.style.position = '';
+      body.style.width = '';
+      body.style.overflowY = '';
+    }
+  }, [shoppingCartActive]);
   const [cart, setCart] = useState([])
   const [totalPrice, setTotalPrice] = useState(0)
   useEffect(() => {
@@ -14,12 +26,11 @@ function ShoppingCart({shoppingCartActive, setShoppingCartActive, slide, cartUpd
   setTotalPrice(cartData.reduce((total, curVal) => total + (curVal.price * curVal.quantity), 0).toFixed(2))
   },[cartUpdated])
   return (
-    <div className={shoppingCartActive ? 'requires-no-scroll' : null}>
-    <div style={slide === 'left' ? {animation: 'slideLeft 0.3s cubic-bezier(.38,.59,.78,.96) forwards'} : {animation: 'slideRight 0.3s cubic-bezier(.38,.59,.78,.96) forwards'}} className='w-full h-full text-center p-2 md:w-2/5 z-20 fixed right-0 top-0 bg-neutral-900 text-neutral-300'>
-      <div className='h-16 md:h-32'></div>
-      <strong className='text-2xl'>Shopping Cart</strong>
+    <div>
+    <div style={slide === 'left' ? {animation: 'slideLeft 0.3s cubic-bezier(.38,.59,.78,.96) forwards'} : {animation: 'slideRight 0.3s cubic-bezier(.38,.59,.78,.96) forwards'}} className=' w-80 pt-16 h-full text-center p-2 z-20 fixed right-0 top-0 bg-neutral-900 text-neutral-300'>
+      <strong className='text-2xl'>Your Cart</strong>
       <button onClick={() => setShoppingCartActive(false)}>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 absolute top-16 md:top-32 right-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 absolute top-16 right-2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>

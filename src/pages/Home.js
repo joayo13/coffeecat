@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { scrollToTop } from '../helpers/scrollToTop'
 import catHeadWithFace from '../images/catHeadWithFace.png'
@@ -9,12 +9,13 @@ function Home() {
   useEffect(() => {
     scrollToTop()
   },[])
+  const [catHeadLoaded, setCatHeadLoaded] = useState(false)
 
   return (
     <div className='bg-neutral-900 text-neutral-300 pt-16'>
       <div className='w-full parallax' alt='cat in shopwindow'></div>
       <section className='px-4 text-xl md:text-lg relative'>
-        <img className='absolute -top-28 left-1/2 -translate-x-1/2' src={catHeadWithFace} alt='cats head'></img>
+        <img className='absolute -top-28 left-1/2 -translate-x-1/2' onLoad={() => setCatHeadLoaded(true)} src={catHeadWithFace} alt='cats head'></img>
         <h1 className='text-4xl md:text-7xl text-center py-8 font-bold'>Coffee with a Purrpose</h1>
         <div className=' max-w-3xl mx-auto'>
         <p>We believe in combining our love for exceptional coffee with our passion for helping our feline friends.

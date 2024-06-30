@@ -17,6 +17,14 @@ body {
         opacity: 0.5;
       }
     }
+	@keyframes fadeinFull {
+		0% {
+		  opacity: 0;
+		}
+		100% {
+		  opacity: 1;
+		}
+	  }
     @keyframes slideUp {
       from {
         transform: translateY(0%);
@@ -90,10 +98,9 @@ input[type=number]::-webkit-inner-spin-button {
 .parallax {
     /* The image used */
   background-image: url('./images/coffee-shop-repeating.jpg');
-  background-color: black;
+  background-color: #0e0e0e;
   /* Set a specific height */
   min-height: 60vh; 
-
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: bottom;
