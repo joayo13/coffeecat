@@ -118,7 +118,7 @@ function App() {
       <Route path="/copyright" element={<Copyright/>}/>
       <Route path="*" element={<NotFound/>}/>
     </Routes>
-    <footer className="flex relative items-center justify-evenly px-2 py-4 bg-neutral-950 text-neutral-300">
+    <footer className="flex relative items-center justify-evenly px-2 z-10 py-4 bg-neutral-950 text-neutral-300">
       <img src={footerLogo} alt='coffee cat logo' className="w-20 h-20"></img>
       <ul className="flex flex-col items-center">
       <strong>Legal</strong>

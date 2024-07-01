@@ -70,6 +70,8 @@ function Privacy() {
             <strong>CoffeeCat</strong>
             <p>coffeecat@coffee.com</p>
       </ul>
+      <div className="absolute hidden xl:block right-0 top-0 w-44 h-full side-banner"></div>
+    <div className="absolute hidden xl:block left-0 top-0 w-44 h-full side-banner"></div>
     </div>
   )
 }

@@ -41,6 +41,11 @@ body {
         transform: translateY(0%);
       }
     }
+.side-banner {
+	background-image: url('./images/coffee-shop-repeating.jpg');
+	background-repeat: repeat;
+	background-size: 30rem;
+}
 .cart::-webkit-scrollbar {
     width: 5px;
     scrollbar-color: dark;

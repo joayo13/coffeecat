@@ -41,9 +41,9 @@ function Checkout({cartUpdated, setCartUpdated}) {
   return (
     <div className='bg-neutral-900 text-neutral-300 pt-16'>
       <section className='flex flex-col items-center'>
-      <strong className='text-3xl md:text-6xl py-4 text-center'>Shopping Cart</strong>
+      <strong className='text-3xl md:text-6xl py-4 text-center'>Checkout</strong>
       <ul className='flex flex-col bg-neutral-800 justify-center rounded-lg gap-2 p-2 flex-wrap'>
-      {cart.map((item) => <CheckoutItem cartItemData={item} totalPrice={totalPrice} setCartUpdated={setCartUpdated}/>)}
+      {cart.length ? cart.map((item) => <CheckoutItem cartItemData={item} totalPrice={totalPrice} setCartUpdated={setCartUpdated}/>) : <p className='text-center'>Your cart is empty.</p>}
       <button onClick={() => handlePayment()} className='bg-neutral-900 font-extrabold text-neutral-300 max-w-fit mx-auto py-2 px-4 flex items-center gap-[0.30rem] rounded-full my-2 h-12'><strong>Checkout with</strong> <img alt='stripe logo' className='w-10 mt-[0.18rem]' src='https://cdn-icons-png.flaticon.com/512/5968/5968382.png'></img> (${totalPrice})</button>
       </ul>
       </section>
@@ -72,6 +72,8 @@ function Checkout({cartUpdated, setCartUpdated}) {
         : null
       }
       </section>
+      <div className="absolute hidden xl:block right-0 top-0 w-44 h-full side-banner"></div>
+    <div className="absolute hidden xl:block left-0 top-0 w-44 h-full side-banner"></div>
     </div>
   )
 }

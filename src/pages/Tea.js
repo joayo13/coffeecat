@@ -37,6 +37,8 @@ function Tea({setCartUpdated, cartUpdated, setShoppingCartActive, setShoppingCar
         </div>
         <button onClick={() => {addToCart(teaItems[item.id], quantity); setCartUpdated(true); setShoppingCartShowing(true); setShoppingCartActive(true) }} className='bg-neutral-300 text-neutral-800 font-extrabold py-2 px-4 rounded-full'>Add to cart</button>
         </section>
+        <div className="absolute hidden xl:block right-0 top-0 w-44 h-full side-banner"></div>
+    <div className="absolute hidden xl:block left-0 top-0 w-44 h-full side-banner"></div>
     </div>
   )
 }
