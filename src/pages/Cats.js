@@ -9,7 +9,7 @@ function Cats() {
   },[])
   return (
     <div className='bg-neutral-900 text-neutral-300 pt-16'>
-      <section className='flex flex-col w-full items-center py-2 px-4'>
+      <section className='flex flex-col w-96 mx-auto items-center py-2 px-4'>
         <strong className='text-3xl text-center pb-2 md:text-6xl max-w-lg'>Fastest Cat</strong>
         <img className=' object-cover w-96 h-96' alt='sir thomas' src={sirThomas}></img>
         <span className='w-full max-w-lg flex gap-2'>
@@ -25,7 +25,7 @@ function Cats() {
           <p>Super Speed at 1am</p>
         </span>
         </section>
-        <section className='flex flex-col w-full items-center py-2 px-2'>
+        <section className='flex flex-col w-96 mx-auto items-center py-2 px-2'>
         <strong className='text-3xl text-center pb-2 md:text-6xl max-w-lg'>Loudest Meow</strong>
         <img className=' object-cover w-96 h-96' alt='poo' src={mcChicken}></img>
         <span className='w-full max-w-lg flex gap-2'>
@@ -41,7 +41,7 @@ function Cats() {
           <p>Meowing very loudly</p>
         </span>
         </section>
-        <section className='flex flex-col w-full items-center py-2 px-2'>
+        <section className='flex flex-col w-96 mx-auto items-center py-2 px-2'>
         <strong className='text-3xl text-center pb-2 md:text-6xl max-w-lg'>Highest Jump</strong>
         <img className=' object-cover w-96 h-96' alt='poo' src={peter}></img>
         <span className='w-full max-w-lg flex gap-2'>
