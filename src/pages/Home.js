@@ -5,6 +5,7 @@ import catHeadWithFace from '../images/catHeadWithFace.png'
 import sirThomas from '../images/sir-thomas.jpg'
 import peter from '../images/peter.jpg'
 import bart from '../images/bart.jpg'
+import whiskers from '../images/whiskers.png'
 function Home() {
   useEffect(() => {
     scrollToTop()
@@ -17,8 +18,13 @@ function Home() {
       </div>
       <section className='px-4 text-xl md:text-lg relative'>
         <img className='absolute -top-28 left-1/2 -translate-x-1/2' src={catHeadWithFace} alt='cats head'></img>
+        
+        <div className='relative'>
+        <img className='absolute left-0' src={whiskers}></img>
+        <img className='absolute right-0 -scale-x-100' src={whiskers}></img>
         <h2 className='text-4xl md:text-7xl text-center py-8 font-bold'>Coffee with a Purrpose</h2>
-        <div className=' max-w-3xl mx-auto'>
+        </div>
+        <div className=' max-w-3xl mx-auto relative'>
         <p>We believe in combining our love for exceptional coffee with our passion for helping our feline friends.
             For every purchase made, a portion of the proceeds is donated to local cat shelters. Our mission is to support the well-being of cats in need,
              ensuring they receive the care, love, and shelter they deserve. Join us in making a positive impact, one cup at a time.
