@@ -9,7 +9,7 @@ function Privacy() {
     <div className='text-neutral-300 px-4 pt-16'>
       
       <ul className='max-w-xl mx-auto py-4'>
-      <strong className='text-3xl md:text-6xl block py-4'>Privacy Policy</strong>
+      <strong className='text-6xl block py-4'>Privacy Policy</strong>
       <li><strong>1. Introduction: </strong>
 
             Welcome to CoffeeCat! This website is intended for fun and as a personal project. Your privacy is important to us, and we are committed to protecting your personal information. This Privacy Policy is designed to inform you about how we collect, use, disclose, and safeguard your information when you interact with our website.

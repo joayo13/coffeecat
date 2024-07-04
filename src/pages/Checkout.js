@@ -39,7 +39,7 @@ function Checkout({cartUpdated, setCartUpdated}) {
     })
     }
   return (
-    <div className='bg-neutral-900 text-neutral-300 pt-16'>
+    <div className='bg-neutral-900 text-neutral-300 pt-16 min-h-screen'>
       <section className='flex flex-col items-center'>
       <strong className='text-3xl md:text-6xl py-4 text-center'>Checkout</strong>
       <ul className='flex flex-col bg-neutral-800 justify-center rounded-lg gap-2 p-2 flex-wrap'>
