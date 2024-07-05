@@ -33,7 +33,6 @@ function Checkout({cartUpdated, setCartUpdated}) {
     })
     .then(({ url }) => {
       window.location = url
-      console.log(url)
     })
     .catch(e => {
       console.error(e)
