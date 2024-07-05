@@ -90,6 +90,7 @@ function App() {
 					onClick={() => {setShoppingCartActive(false); setMobileMenuActive(!mobileMenuActive); setMobileMenuShowing(true)}}
 					aria-expanded={mobileMenuActive ? 'true' : 'false'}
 					aria-controls="mobile-menu"
+          aria-label="Toggle navigation"
 				>
 					<span class="hamburger-box">
 						<span class="hamburger-inner"></span>
@@ -119,21 +120,25 @@ function App() {
       <Route path="*" element={<NotFound/>}/>
     </Routes>
     <footer className="flex relative items-center justify-evenly px-2 z-10 py-4 bg-neutral-950 text-neutral-300">
-      <img src={footerLogo} alt='coffee cat logo' className="w-20 h-20"></img>
-      <ul className="flex flex-col items-center">
-      <strong>Legal</strong>
-      <Link to='/privacy'>Privacy Policy</Link>
-      <Link to='/tou'>Terms Of Use</Link>
-      <Link to='/copyright'>Copyright</Link>
-      </ul>
-      <ul className="flex flex-col items-center">
-      <strong>Contact</strong>
-      <p>123-456-7890</p>
-      <p>coffee@cat.com</p>
-      <Link to='https://github.com/joayo13'>Github</Link>
-      </ul>
-    </footer>
-    {mobileMenuShowing && mobileMenuActive ? <button onClick={() => setMobileMenuActive(false) } style={{animation: 'fadein 0.3s forwards'}} className="fixed top-0 right-0 bottom-0 left-0 bg-black opacity-0"></button> : null}
+  <img src={footerLogo} alt="Coffee cat logo" className="w-20 h-20" />
+  
+  <ul className="flex flex-col items-center" aria-labelledby="legal-section">
+    <li id="legal-section" className="sr-only">Legal</li>
+    <li><strong>Legal</strong></li>
+    <li><Link to="/privacy">Privacy Policy</Link></li>
+    <li><Link to="/tou">Terms Of Use</Link></li>
+    <li><Link to="/copyright">Copyright</Link></li>
+  </ul>
+  
+  <ul className="flex flex-col items-center" aria-labelledby="contact-section">
+    <li id="contact-section" className="sr-only">Contact</li>
+    <li><strong>Contact</strong></li>
+    <li><p>123-456-7890</p></li>
+    <li><p>coffee@cat.com</p></li>
+    <li><Link to="https://github.com/joayo13">Github</Link></li>
+  </ul>
+</footer>
+    {mobileMenuShowing && mobileMenuActive ? <button aria-controls="shopping-cart-menu" onClick={() => setMobileMenuActive(false) } style={{animation: 'fadein 0.3s forwards'}} className="fixed top-0 right-0 bottom-0 left-0 bg-black opacity-0"></button> : null}
     
     {shoppingCartActive ? <button onClick={() => setShoppingCartActive(false) } style={{animation: 'fadein 0.3s forwards'}} className="fixed top-0 right-0 bottom-0 left-0 bg-black opacity-0"></button> : null}
     </div>

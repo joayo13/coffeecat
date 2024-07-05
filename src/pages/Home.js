@@ -13,13 +13,17 @@ function Home() {
 
   return (
     <div className='bg-neutral-900 text-neutral-300 pt-16'>
-      <div className='w-full parallax' alt='cat in shopwindow'>
+      
+      
+      <div className='w-full parallax relative' alt='cat in shopwindow'>
+      <div className='absolute w-full h-full bg-neutral-950 opacity-30'></div>
+      <h2 className='text-7xl text-center absolute left-1/2 font-extrabold -translate-x-1/2 top-1/2 -translate-y-1/2 shadow-lg'>Coffee with a Purrpose.</h2>
       </div>
       <section className='px-4 text-xl md:text-lg relative'>
         <img className='absolute -top-28 left-1/2 -translate-x-1/2' src={catHeadWithFace} alt='cats head'></img>
         
-        <h2 className='text-4xl md:text-7xl text-center py-8 font-bold'>Coffee with a Purrpose</h2>
-        <div className=' max-w-3xl mx-auto relative'>
+        
+        <div className='pt-12 max-w-3xl mx-auto relative'>
         <p>We believe in combining our love for exceptional coffee with our passion for helping our feline friends.
             For every purchase made, a portion of the proceeds is donated to local cat shelters. Our mission is to support the well-being of cats in need,
              ensuring they receive the care, love, and shelter they deserve. Join us in making a positive impact, one cup at a time.
@@ -74,7 +78,7 @@ function Home() {
     </svg>
 </div>
         <h2 className='text-4xl md:text-7xl text-center py-4 relative'><strong>So what are you waiting for? Lets get to shopping.</strong></h2>
-        <ul className='flex w-full gap-2 items-center md:flex-row md:justify-evenly py-8 px-2 flex-col relative'>
+        <section className='flex w-full gap-2 items-center md:flex-row md:justify-evenly py-8 px-2 flex-col relative'>
           <div className='w-full'>
             <div className='coffee-shop-background relative h-48 md:h-96 w-full rounded-md overflow-hidden'>
             <div className='absolute bg-black bg-opacity-80 bottom-0 rounded-b-md text-base p-2'>
@@ -108,7 +112,7 @@ function Home() {
               </div>
             </div>
           </div>
-        </ul>
+        </section>
         
       </section>
     </div>
