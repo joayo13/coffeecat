@@ -38,21 +38,21 @@ const CatProfiles = () => {
   return (
     <div className='bg-neutral-900 text-neutral-300 pt-16'>
       <CatProfile
-        name='Fastest Cat'
+        name='Sir Thomas'
         favoriteFood='Kraft Singles'
         superpower='Super Speed at 1am'
         src={sirThomas}
         alt='sir thomas'
       />
       <CatProfile
-        name='Loudest Meow'
+        name='McChicken'
         favoriteFood='Chicken'
         superpower='Meowing very loudly'
         src={mcChicken}
         alt='mc chicken'
       />
       <CatProfile
-        name='Highest Jump'
+        name='Peter'
         favoriteFood='Doritos'
         superpower='Extremely high catnip tolerance'
         src={peter}

@@ -6,6 +6,8 @@ function Checkout({cartUpdated, setCartUpdated}) {
   const [cart, setCart] = useState([])
   const [totalPrice, setTotalPrice] = useState(0)
   const [readMore, setReadMore] = useState(false)
+  const [isLoading, setIsLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
   useEffect(() => {
     scrollToTop()
   },[])
@@ -18,6 +20,8 @@ function Checkout({cartUpdated, setCartUpdated}) {
     setTotalPrice(cartData.reduce((total, curVal) => total + (curVal.price * curVal.quantity), 0).toFixed(2))
     },[cartUpdated])
     function handlePayment () {
+      setIsLoading(true);
+      setErrorMessage('');
       fetch("https://quintessential-maize-heart.glitch.me/create-checkout-session", {
     method: "POST",
     headers: {
@@ -26,27 +30,60 @@ function Checkout({cartUpdated, setCartUpdated}) {
     body: JSON.stringify({
       items: cart,
     }),
+    
   })
     .then(res => {
+      setIsLoading(false);
       if (res.ok) return res.json()
       return res.json().then(json => Promise.reject(json))
+      
     })
     .then(({ url }) => {
       window.location = url
     })
     .catch(e => {
+      setIsLoading(false);
       console.error(e)
+      setErrorMessage('Payment failed. Please try again.');
     })
+    setTimeout(() => {
+      if (isLoading) {
+        setIsLoading(false);
+        setErrorMessage('Payment is taking longer than expected. Please try again.');
+      }
+    }, 10000);
     }
   return (
     <div className='bg-neutral-900 text-neutral-300 pt-16 min-h-screen'>
-      <section className='flex flex-col items-center'>
-      <strong className='text-3xl md:text-6xl py-4 text-center'>Checkout</strong>
-      <ul className='flex flex-col bg-neutral-800 justify-center rounded-lg gap-2 p-2 flex-wrap'>
-      {cart.length ? cart.map((item) => <CheckoutItem cartItemData={item} totalPrice={totalPrice} setCartUpdated={setCartUpdated}/>) : <p className='text-center'>Your cart is empty.</p>}
-      <button onClick={() => handlePayment()} className='bg-neutral-900 font-extrabold text-neutral-300 max-w-fit mx-auto py-2 px-4 flex items-center gap-[0.30rem] rounded-full my-2 h-12'><strong>Checkout with</strong> <img alt='stripe logo' className='w-10 mt-[0.18rem]' src='https://cdn-icons-png.flaticon.com/512/5968/5968382.png'></img> (${totalPrice})</button>
+      <section className="flex flex-col items-center">
+      <strong className="text-3xl md:text-6xl py-4 text-center">Checkout</strong>
+      <ul className="flex flex-col bg-neutral-800 justify-center rounded-lg gap-2 p-2 flex-wrap">
+        {cart.length ? cart.map((item) => (
+          <CheckoutItem
+            key={item.id} // Ensure unique key for each item
+            cartItemData={item}
+            totalPrice={totalPrice}
+            setCartUpdated={setCartUpdated}
+          />
+        )) : <p className="text-center">Your cart is empty.</p>}
+        <button
+          onClick={handlePayment}
+          className="bg-neutral-900 font-extrabold text-neutral-300 max-w-fit mx-auto py-2 px-4 flex items-center gap-[0.30rem] rounded-full my-2 h-12"
+          disabled={isLoading}
+        >
+          {isLoading ? (
+            <span>Loading...</span>
+          ) : (
+            <>
+              <strong>Checkout with</strong>
+              <img alt="stripe logo" className="w-10 mt-[0.18rem]" src="https://cdn-icons-png.flaticon.com/512/5968/5968382.png" />
+              (${totalPrice})
+            </>
+          )}
+        </button>
+        {errorMessage && <p className="text-center text-red-500">{errorMessage}</p>}
       </ul>
-      </section>
+    </section>
       <section className='max-w-xl py-2 px-4 mx-auto'>
         <strong className='text-xl'>Streamlined and Secure Checkout Experience with Stripe</strong>
         <p>Experience the future of online shopping with our secure checkout powered by Stripe! At Coffee Cat,
