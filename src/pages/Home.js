@@ -35,6 +35,7 @@ function Home() {
             <img 
               src={peter}
               alt='peter the cat from amsterdam'
+              loading='lazy'
               className='rounded-full h-12 w-12 md:h-24 md:w-24 object-cover'>
             </img>
             <strong>"Yeah probably the best coffee I've ever tasted hands down."</strong>
@@ -47,6 +48,7 @@ function Home() {
             <img 
               src={sirThomas}
               alt='sir thomas the cat from toronto'
+              loading='lazy'
               className='rounded-full h-12 w-12 md:h-24 md:w-24 object-cover'></img>
             <strong>"I liked the mugs."</strong>
           </div>
@@ -58,6 +60,7 @@ function Home() {
             <img 
               src={bart}
               alt='bart the cat from detroit'
+              loading='lazy'
               className='object-cover rounded-full h-12 w-12 md:h-24 md:w-24'>
             </img>
             <strong>"F&#K Y&* M*%#ERF*KR!!!!!"</strong>
