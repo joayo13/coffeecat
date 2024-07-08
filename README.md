@@ -2,7 +2,7 @@
 
 [Live Demo](https://coffeecat.netlify.app)
 
-![Coffee Cat Logo](src/Frame%202.png)
+![Coffee Cat Logo](src/images/catMug.png)
 
 Coffee Cat is a modern and stylish e-commerce site built with React, Node.js, integrated with the Stripe API for secure payments, and designed using Tailwind CSS.
 
